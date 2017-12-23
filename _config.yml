@@ -1,8 +1,8 @@
 # Site settings
 title: 冬之晓                          #你的博客网站标题
-SEOTitle: 你的博客 | Your Blog
+SEOTitle: 王晓东的博客 | WangXiaoDong Blog
 header-img: img/bg.png
-email: huxpro@gmail.com
+email: dongzhixiaodong@gmail.com
 description: "自己建的博客，不错吧~"                        #随便说点，描述一下
 keyword: ""
 url: "www"              # your host, for absolute URL
@@ -16,7 +16,7 @@ weibo_username:     Dongzhixiao      # 你的微博账号，底部链接会自�
 zhihu_username:     Dongzhixiao
 github_username:    Dongzhixiao    #你的github账号
 #twitter_username:  
-#facebook_username:  dongzhixiao
+facebook_username:  dongzhixiao
 
 
 
