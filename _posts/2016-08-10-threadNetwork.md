@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "骤雨"
-subtitle:   "余姚的天气真多变"
+title:      "阅读代码"
+subtitle:   "发现不足，多线程，网络通信"
 date:       2016-08-10
 author:     "WangXiaoDong"
 header-img: "img/20160810.jpg"
