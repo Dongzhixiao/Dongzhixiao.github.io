@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "读代码"
-subtitle:   "继续读代码，接同学"
+title:      "适应生活"
+subtitle:   "慢慢开始适应这边的生活"
 date:       2016-07-27
 author:     "WangXiaoDong"
 header-img: "img/20160727.jpg"
