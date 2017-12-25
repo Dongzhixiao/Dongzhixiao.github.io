@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "同事走了"
-subtitle:   "同事调离岗位、具体了解公司"
+subtitle:   "2016/07/30 同事调离岗位、具体了解公司"
 date:       2016-07-30
 author:     "WangXiaoDong"
 header-img: "img/20160730.jpg"

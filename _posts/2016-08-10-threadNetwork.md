@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "阅读代码"
-subtitle:   "发现不足，多线程，网络通信"
+subtitle:   "2016/08/10 发现不足，多线程，网络通信"
 date:       2016-08-10
 author:     "WangXiaoDong"
 header-img: "img/20160810.jpg"
@@ -15,7 +15,7 @@ tags:
 -----
 #####   Author:冬之晓:dizzy_face:
 #####   Email: 347916416@qq.com
-#####   MyAppearance: ![MyAppearance](../MyPicture.JPG "我的头像")
+#####   MyAppearance: ![MyAppearance](https://github.com/Dongzhixiao/PictureCache/raw/master/MyPicture.JPG "我的头像")
 ----------
 
 <pre>

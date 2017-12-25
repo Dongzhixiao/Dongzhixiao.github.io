@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "新工作"
-subtitle:   "心情平淡的一天"
+subtitle:   "2016/07/23 心情平淡的一天"
 date:       2016-07-23
 author:     "WangXiaoDong"
 header-img: "img/clannad.jpg"

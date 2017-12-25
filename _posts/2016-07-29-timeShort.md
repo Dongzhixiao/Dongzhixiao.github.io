@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "努力工作"
-subtitle:   "第一次吃饭团！人生短暂，时不待我！"
+subtitle:   "2016/07/29 第一次吃饭团！人生短暂，时不待我！"
 date:       2016-07-29
 author:     "WangXiaoDong"
 header-img: "img/20160729.jpg"

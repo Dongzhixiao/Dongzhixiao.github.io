@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "发现新书"
-subtitle:   "好多知识自己都没有学过"
+subtitle:   "2016/07/31 好多知识自己都没有学过"
 date:       2016-07-31
 author:     "WangXiaoDong"
 header-img: "img/20160731.jpg"

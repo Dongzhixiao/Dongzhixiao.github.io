@@ -1,8 +1,22 @@
+---
+layout:     post
+title:      "学习Lua语言"
+subtitle:   "2016/08/12 发现趣味"
+date:       2016-08-12
+author:     "WangXiaoDong"
+header-img: "img/20160812.gif"
+tags:
+    - 日记
+---
+
+
+----------
+
 ### 时间:2016年8月12日 天气:晴:sunny:
 -----
 #####   Author:冬之晓:dizzy_face:
 #####   Email: 347916416@qq.com
-#####   MyAppearance: ![MyAppearance](../MyPicture.JPG "我的头像")
+#####   MyAppearance: ![MyAppearance](https://github.com/Dongzhixiao/PictureCache/raw/master/MyPicture.JPG "我的头像")
 ----------
 
 <pre>

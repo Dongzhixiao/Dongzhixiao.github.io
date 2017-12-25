@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "编程的痛苦"
-subtitle:   "接手一个半截程序真痛苦"
+subtitle:   "2016/08/03 接手一个半截程序真痛苦"
 date:       2016-08-03
 author:     "WangXiaoDong"
 header-img: "img/20160803.jpg"
