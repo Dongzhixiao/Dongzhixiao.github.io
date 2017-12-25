@@ -4,7 +4,7 @@ title:      "机器学习（一）"
 subtitle:   "机器学习第一小节"
 date:       2017-08-05
 author:     "WangXiaoDong"
-header-img: "img/sad.jpg"
+header-img: "img/20170805.jpg"
 tags:
     - 机器学习
 ---
