@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "机器学习（一）"
-subtitle:   "机器学习第一小节"
+subtitle:   "线性方程拟合的梯度下降法"
 date:       2017-08-05
 author:     "WangXiaoDong"
 header-img: "img/20170805.jpg"
