@@ -7,8 +7,8 @@ author:     "WangXiaoDong"
 header-img: "img/20160831.jpg"
 tags:
     - 日记
-	- Qt
-	- 设计模式
+    - Qt
+    - 设计模式
     - Effect C++
 ---
 

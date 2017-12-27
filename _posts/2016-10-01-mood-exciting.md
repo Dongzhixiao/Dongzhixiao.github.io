@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "回家"
-subtitle:   "第一份工作的休息日"
+subtitle:   "2016/10/1 第一份工作的休息日"
 date:       2016-10-01
 author:     "WangXiaoDong"
 header-img: "img/20161001.jpg"

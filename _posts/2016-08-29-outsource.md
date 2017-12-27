@@ -7,7 +7,7 @@ author:     "WangXiaoDong"
 header-img: "img/20160829.jpg"
 tags:
     - 日记
-	- Qt
+    - Qt
     - Effect C++
 ---
 
