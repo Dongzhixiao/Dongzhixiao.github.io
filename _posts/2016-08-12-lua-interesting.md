@@ -4,7 +4,7 @@ title:      "学习Lua语言"
 subtitle:   "2016/08/12 发现趣味"
 date:       2016-08-12
 author:     "WangXiaoDong"
-header-img: "img/20160812.gif"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160812.gif?raw=true"
 tags:
     - 日记
 ---

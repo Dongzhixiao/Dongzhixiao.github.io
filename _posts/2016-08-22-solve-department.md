@@ -4,7 +4,7 @@ title:      "第一次跟领导交流"
 subtitle:   "2016/08/22 解决了公寓房子的问题"
 date:       2016-08-22
 author:     "WangXiaoDong"
-header-img: "img/20160822.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160822.jpg?raw=true"
 tags:
     - 日记
     - Effect C++

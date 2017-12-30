@@ -4,7 +4,7 @@ title:      "Qt界面问题"
 subtitle:   "2016/08/19 阅读别人代码学习"
 date:       2016-08-19
 author:     "WangXiaoDong"
-header-img: "img/20160819.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160819.jpg?raw=true"
 tags:
     - 日记
     - Qt

@@ -4,7 +4,7 @@ title:      "阅读代码"
 subtitle:   "2016/08/10 发现不足，多线程，网络通信"
 date:       2016-08-10
 author:     "WangXiaoDong"
-header-img: "img/20160810.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160810.jpg?raw=true"
 tags:
     - 日记
     - 文档生成工具

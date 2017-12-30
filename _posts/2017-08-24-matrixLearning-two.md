@@ -4,7 +4,7 @@ title:      "矩阵基础(二)"
 subtitle:   "高斯约当法消元法求矩阵的逆  LU分解与行置换矩阵  用高斯消元法解线性方程组"
 date:       2017-08-24
 author:     "WangXiaoDong"
-header-img: "img/20170817.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20170817.jpg?raw=true"
 tags:
     - 矩阵学习
 ---

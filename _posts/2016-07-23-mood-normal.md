@@ -4,7 +4,7 @@ title:      "新工作"
 subtitle:   "2016/07/23 心情平淡的一天"
 date:       2016-07-23
 author:     "WangXiaoDong"
-header-img: "img/clannad.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160723.jpg?raw=true"
 tags:
     - 日记
     - Qt

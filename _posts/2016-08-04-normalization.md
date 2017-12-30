@@ -4,7 +4,7 @@ title:      "程序文档"
 subtitle:   "2016/08/04 写程序一定要有规范的文档！"
 date:       2016-08-04
 author:     "WangXiaoDong"
-header-img: "img/20160804.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160804.jpg?raw=true"
 tags:
     - 日记
     - C++

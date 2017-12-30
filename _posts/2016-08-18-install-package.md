@@ -4,7 +4,7 @@ title:      "Qt程序打包"
 subtitle:   "2016/08/18 Qt程序安装包处理"
 date:       2016-08-18
 author:     "WangXiaoDong"
-header-img: "img/20160818.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160818.jpg?raw=true"
 tags:
     - 日记
     - Qt

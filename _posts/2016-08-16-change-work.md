@@ -4,7 +4,7 @@ title:      "工作变化"
 subtitle:   "2016/08/16 开始汇报每天完成任务和第二天计划"
 date:       2016-08-16
 author:     "WangXiaoDong"
-header-img: "img/20160816.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160816.jpg?raw=true"
 tags:
     - 日记
     - Doxygen

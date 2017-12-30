@@ -4,7 +4,7 @@ title:      "余姚的空气真好"
 subtitle:   "2016/08/02 至少住在这边对身体好！"
 date:       2016-08-02
 author:     "WangXiaoDong"
-header-img: "img/20160802.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160802.jpg?raw=true"
 tags:
     - 日记
     - C++

@@ -4,7 +4,7 @@ title:      "使用机器学习和数据挖掘算法进行数据处理"
 subtitle:   "机器学习 数据挖掘 算法 数据处理"
 date:       2017-12-12
 author:     "WangXiaoDong"
-header-img: "img/20171212.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20171212.jpg?raw=true"
 tags:
     - 机器学习
     - 数据挖掘

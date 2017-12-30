@@ -4,7 +4,7 @@ title:      "多人开发的问题"
 subtitle:   "2016/08/24 多人开发时他人可能产生的bug"
 date:       2016-08-24
 author:     "WangXiaoDong"
-header-img: "img/20160824.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160824.jpg?raw=true"
 tags:
     - 日记
     - Effect C++

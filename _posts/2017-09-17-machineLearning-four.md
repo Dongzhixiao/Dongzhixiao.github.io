@@ -4,7 +4,7 @@ title:      "机器学习（四）"
 subtitle:   "正则化(Regularization)"
 date:       2017-09-17
 author:     "WangXiaoDong"
-header-img: "img/20170805.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20170805.jpg?raw=true"
 tags:
     - 机器学习
 ---

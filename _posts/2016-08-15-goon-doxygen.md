@@ -4,7 +4,7 @@ title:      "孤单"
 subtitle:   "2016/08/15 继续Doxygen学习"
 date:       2016-08-15
 author:     "WangXiaoDong"
-header-img: "img/20160815.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160815.jpg?raw=true"
 tags:
     - 日记
     - Doxygen

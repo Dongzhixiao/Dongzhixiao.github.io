@@ -4,7 +4,7 @@ title:      "继续学习《Effective C++》"
 subtitle:   "2016/08/27 进入了资源管理模块的学习，非常激动"
 date:       2016-08-27
 author:     "WangXiaoDong"
-header-img: "img/20160827.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160827.jpg?raw=true"
 tags:
     - 日记
     - Effect C++

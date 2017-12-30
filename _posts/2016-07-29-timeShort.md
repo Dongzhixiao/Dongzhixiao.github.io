@@ -4,7 +4,7 @@ title:      "努力工作"
 subtitle:   "2016/07/29 第一次吃饭团！人生短暂，时不待我！"
 date:       2016-07-29
 author:     "WangXiaoDong"
-header-img: "img/20160729.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160729.jpg?raw=true"
 tags:
     - 日记
     - Qt

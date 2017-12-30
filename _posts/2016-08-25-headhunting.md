@@ -4,7 +4,7 @@ title:      "接到猎头电话"
 subtitle:   "2016/08/25 第一次接到猎头电话，发现自身能力不足"
 date:       2016-08-25
 author:     "WangXiaoDong"
-header-img: "img/20160825.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160825.jpg?raw=true"
 tags:
     - 日记
     - Effect C++

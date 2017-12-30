@@ -4,7 +4,7 @@ title:      "发现新书"
 subtitle:   "2016/07/31 好多知识自己都没有学过"
 date:       2016-07-31
 author:     "WangXiaoDong"
-header-img: "img/20160731.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160731.jpg?raw=true"
 tags:
     - 日记
     - C++

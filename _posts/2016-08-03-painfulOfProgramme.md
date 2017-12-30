@@ -4,7 +4,7 @@ title:      "编程的痛苦"
 subtitle:   "2016/08/03 接手一个半截程序真痛苦"
 date:       2016-08-03
 author:     "WangXiaoDong"
-header-img: "img/20160803.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160803.jpg?raw=true"
 tags:
     - 日记
     - C++

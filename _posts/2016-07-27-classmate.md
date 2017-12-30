@@ -4,7 +4,7 @@ title:      "适应生活"
 subtitle:   "2016/07/27 慢慢开始适应这边的生活"
 date:       2016-07-27
 author:     "WangXiaoDong"
-header-img: "img/20160727.jpg"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160727.jpg?raw=true"
 tags:
     - 日记
     - Windows命令
