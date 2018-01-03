@@ -1,8 +1,22 @@
+---
+layout:     post
+title:      "程序新特性"
+subtitle:   "2016/9/9 查缺补漏"
+date:       2016-09-09
+author:     "WangXiaoDong"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160909.jpg?raw=true"
+tags:
+    - 日记
+    - Qt
+    - Effect C++
+    - 设计模式
+---
+
 ### 时间:2016年9月9日 天气:晴:sunny:
 -----
 #####   Author:冬之晓:angry:
 #####   Email: 347916416@qq.com
-#####   MyAppearance: ![MyAppearance](../MyPicture.JPG "我的头像")
+#####   MyAppearance: ![MyAppearance](https://github.com/Dongzhixiao/PictureCache/raw/master/MyPicture.JPG "我的头像")
 ----------
 
 <pre>
@@ -10,9 +24,14 @@
 觉非常棒，又可以在床上度过啦！
 </pre>
 
-今天的工作中，我发现QUdpSocket这个类可以在连接的时候断开信号和槽函数，但是断开后就不能再次和这个槽函数连接了！这样每当我不需要更新Udp读取的数据的时候可以断开，但是当我再次需要读取UDP数据的时候，只能再次新建一个QUdpSocket，然后再和重新建立信号和槽才能够触发这个槽函数！这是奇怪，但是我也不知道为啥，以后有机会要向高人请教！！
+今天的工作中，我发现QUdpSocket这个类可以在连接的时候断开信号和槽函数，但是断开后就不能再次和这个槽函数连接了！
+这样每当我不需要更新Udp读取的数据的时候可以断开，但是当我再次需要读取UDP数据的时候，只能再次新建一个QUdpSocket，
+然后再和重新建立信号和槽才能够触发这个槽函数！这是奇怪，但是我也不知道为啥，以后有机会要向高人请教！！
 
-同时今天还解决了一个问题，就是如何在和服务器断开连接后能够及时的响应到，说明已经和网络断开了，一般晚上使用的方法是“心跳连接”，就是隔一段时间发送一条命令，如果服务器没有发出回应的话就说明断开了连接。我使用Qt自带的检查网络是否连接的类`QNetworkConfigurationManager`，这个类在网络状态发生改变的时候发送一个信号`void QNetworkConfigurationManager::onlineStateChanged(bool isOnline)`，这样就能够及时的对网络断开发生响应了，我检测了一下，大概断开后5秒左右这个信号就能发出！非常不错的效果！
+同时今天还解决了一个问题，就是如何在和服务器断开连接后能够及时的响应到，说明已经和网络断开了，一般晚上使用的方法是“心跳连接”，
+就是隔一段时间发送一条命令，如果服务器没有发出回应的话就说明断开了连接。我使用Qt自带的检查网络是否连接的类`QNetworkConfigurationManager`，
+这个类在网络状态发生改变的时候发送一个信号`void QNetworkConfigurationManager::onlineStateChanged(bool isOnline)`，
+这样就能够及时的对网络断开发生响应了，我检测了一下，大概断开后5秒左右这个信号就能发出！非常不错的效果！
 
 
 #### 条款25：考虑写出一个不抛出异常的swap函数

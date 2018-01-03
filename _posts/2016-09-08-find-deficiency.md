@@ -1,8 +1,22 @@
+---
+layout:     post
+title:      "网络编程"
+subtitle:   "2016/9/8 发现不足"
+date:       2016-09-08
+author:     "WangXiaoDong"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160908.jpg?raw=true"
+tags:
+    - 日记
+    - Qt
+    - Effect C++
+    - 设计模式
+---
+
 ### 时间:2016年9月8日 天气:晴:sunny:
 -----
 #####   Author:冬之晓:angry:
 #####   Email: 347916416@qq.com
-#####   MyAppearance: ![MyAppearance](../MyPicture.JPG "我的头像")
+#####   MyAppearance: ![MyAppearance](https://github.com/Dongzhixiao/PictureCache/raw/master/MyPicture.JPG "我的头像")
 ----------
 
 <pre>
