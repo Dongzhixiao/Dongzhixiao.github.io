@@ -1,20 +1,19 @@
 ---
 layout:     post
-title:      "时刻准备泡面"
-subtitle:   "2016/9/17 下雨 泡面"
+title:      "研究抽象工厂模式"
+subtitle:   "2016/9/17 反射"
 date:       2016-09-17
 author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160917.jpg?raw=true"
 tags:
     - 日记
-    - 工作总结
 ---
 
 ### 时间:2016年9月17日 天气:阴:partly_sunny:
 -----
 #####   Author:冬之晓:angry:
 #####   Email: 347916416@qq.com
-#####   MyAppearance: ![MyAppearance](../MyPicture.JPG "我的头像")
+#####   MyAppearance: ![MyAppearance](https://github.com/Dongzhixiao/PictureCache/raw/master/MyPicture.JPG "我的头像")
 ----------
 
 <pre>
