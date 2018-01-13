@@ -1,3 +1,16 @@
+---
+layout:     post
+title:      "吃多零食上火"
+subtitle:   "2016/9/26 多喝水"
+date:       2016-09-26
+author:     "WangXiaoDong"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160926.jpg?raw=true"
+tags:
+    - 日记
+    - Qt
+    - 设计模式
+---
+
 ### 时间:2016年9月26日 天气:晴:sunny:
 -----
 #####   Author:冬之晓:angry:

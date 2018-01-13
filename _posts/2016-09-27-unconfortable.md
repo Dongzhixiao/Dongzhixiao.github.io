@@ -1,8 +1,21 @@
+---
+layout:     post
+title:      "继续上火"
+subtitle:   "2016/9/27 难受"
+date:       2016-09-27
+author:     "WangXiaoDong"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160927.jpg?raw=true"
+tags:
+    - 日记
+    - Qt
+    - 设计模式
+---
+
 ### 时间:2016年9月27日 天气:晴:sunny:
 -----
 #####   Author:冬之晓:angry:
 #####   Email: 347916416@qq.com
-#####   MyAppearance: ![MyAppearance](../MyPicture.JPG "我的头像")
+
 ----------
 
 <pre>

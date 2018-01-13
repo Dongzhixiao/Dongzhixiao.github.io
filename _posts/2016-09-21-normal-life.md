@@ -1,3 +1,16 @@
+---
+layout:     post
+title:      "继续工作"
+subtitle:   "2016/9/21 普通的过活"
+date:       2016-09-21
+author:     "WangXiaoDong"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160921.jpg?raw=true"
+tags:
+    - 日记
+    - 设计模式
+    - Qt
+---
+
 ### 时间:2016年9月21日 天气:晴:sunny:
 -----
 #####   Author:冬之晓:angry:

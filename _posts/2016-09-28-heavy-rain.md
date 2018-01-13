@@ -1,12 +1,25 @@
+---
+layout:     post
+title:      "大雨倾盆，小伞没用！"
+subtitle:   "2016/9/28 大雨"
+date:       2016-09-28
+author:     "WangXiaoDong"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160928.jpg?raw=true"
+tags:
+    - 日记
+    - Qt
+    - 设计模式
+---
+
 ### 时间:2016年9月28日 天气:大雨:umbrella:
 -----
 #####   Author:冬之晓:angry:
 #####   Email: 347916416@qq.com
-#####   MyAppearance: ![MyAppearance](../MyPicture.JPG "我的头像")
 ----------
 
 <pre>
-    今天下起了大雨，幸好我带的有伞！不过晚上回来的时候，发现根本不顶用，对于大雨来说，小伞是没有多大用处的！回到宿舍就成落汤鸡了！哎，真倒霉，囧。
+    今天下起了大雨，幸好我带的有伞！不过晚上回来的时候，发现根本不顶用，对于大雨来说，小伞是没有多大用处的！
+    回到宿舍就成落汤鸡了！哎，真倒霉，囧。
 </pre>
 
 

@@ -1,12 +1,25 @@
+---
+layout:     post
+title:      "去公司加班"
+subtitle:   "2016/9/24 周六加班"
+date:       2016-09-24
+author:     "WangXiaoDong"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20160924.jpg?raw=true"
+tags:
+    - 日记
+    - Qt
+    - qsciscintilla总结
+---
+
 ### 时间:2016年9月24日 天气:晴:sunny:
 -----
 #####   Author:冬之晓:angry:
 #####   Email: 347916416@qq.com
-#####   MyAppearance: ![MyAppearance](../MyPicture.JPG "我的头像")
 ----------
 
 <pre>
-    今天本来以为没事干，结果被要求要加班，因此就来到公司，一直加班到晚上很晚。明明是周六，比平时下班更晚，本来今天打算整理一下这一周的进度，但是现在累的不想动了！
+    今天本来以为没事干，结果被要求要加班，因此就来到公司，一直加班到晚上很晚。明明是周六，比平时下班更晚，
+    本来今天打算整理一下这一周的进度，但是现在累的不想动了！
 </pre>
 
 今天就整理一下Qt下使用qsciscintilla的心得吧。
