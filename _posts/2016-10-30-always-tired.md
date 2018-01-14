@@ -1,10 +1,10 @@
 ---
 layout:     post
 title:      "一直做苦工"
-subtitle:   "2016/10/28 一直累"
-date:       2016-10-28
+subtitle:   "2016/10/30 一直累"
+date:       2016-10-30
 author:     "WangXiaoDong"
-header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20161028.jpg?raw=true"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20161030.jpg?raw=true"
 tags:
     - 日记
 ---
