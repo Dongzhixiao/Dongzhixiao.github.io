@@ -1,8 +1,18 @@
+---
+layout:     post
+title:      "开始学习Lua"
+subtitle:   "2016/10/12 Lua语言"
+date:       2016-10-12
+author:     "WangXiaoDong"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20161012.jpg?raw=true"
+tags:
+    - 日记
+---
+
 ### 时间:2016年10月12日 天气:阴:cloud:
 -----
 #####   Author:冬之晓:angry:
 #####   Email: 347916416@qq.com
-#####   MyAppearance: ![MyAppearance](../MyPicture.JPG "我的头像")
 ----------
 
 <pre>
