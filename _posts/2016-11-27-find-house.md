@@ -1,23 +1,24 @@
 ---
 layout:     post
-title:      "终于到家"
-subtitle:   "2016/11/20 到家"
-date:       2016-11-20
+title:      "来焦作找房子"
+subtitle:   "2016/11/27 焦作一日游"
+date:       2016-11-27
 author:     "WangXiaoDong"
-header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20161120.jpg?raw=true"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20161127.jpg?raw=true"
 tags:
     - 日记
+    - 数据结构
 ---
 
 ### 时间:2016年11月27日 天气:晴:sunny:
 -----
 #####   Author:冬之晓:confounded:
 #####   Email: 347916416@qq.com
-#####   MyAppearance: ![MyAppearance](../MyPicture.JPG "我的头像")
 ----------
 
 <pre>
-    今天,在腾飞的催促下我去了焦作，妈妈不放心，就跟我一块去。找房子的过程是非常折腾人的，果然我还是太没有社会经验了，哎，干什么都不顺心。最后终于随便找了一家后就回家了。心累！
+    今天,在腾飞的催促下我去了焦作，妈妈不放心，就跟我一块去。找房子的过程是非常折腾人的，
+    果然我还是太没有社会经验了，哎，干什么都不顺心。最后终于随便找了一家后就回家了。心累！
 </pre>
 
 ### 数据结构学习（一）———基本定义

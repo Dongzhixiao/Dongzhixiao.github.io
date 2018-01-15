@@ -1,19 +1,19 @@
 ---
 layout:     post
-title:      "终于到家"
-subtitle:   "2016/11/20 到家"
-date:       2016-11-20
+title:      "今年家乡的第一场雪"
+subtitle:   "2016/11/22 在家休息"
+date:       2016-11-22
 author:     "WangXiaoDong"
-header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20161120.jpg?raw=true"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20161122.jpg?raw=true"
 tags:
     - 日记
+    - Qt
 ---
 
 ### 时间:2016年11月22日 天气:大雪:snowflake:
 -----
 #####   Author:冬之晓:relieved:
 #####   Email: 347916416@qq.com
-#####   MyAppearance: ![MyAppearance](../MyPicture.JPG "我的头像")
 ----------
 
 <pre>

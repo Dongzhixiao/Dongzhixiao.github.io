@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      "终于到家"
-subtitle:   "2016/11/20 到家"
-date:       2016-11-20
+title:      "准备租房子"
+subtitle:   "2016/11/25 下一步计划"
+date:       2016-11-25
 author:     "WangXiaoDong"
-header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20161120.jpg?raw=true"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20161125.jpg?raw=true"
 tags:
     - 日记
 ---
@@ -13,7 +13,6 @@ tags:
 -----
 #####   Author:冬之晓:confounded:
 #####   Email: 347916416@qq.com
-#####   MyAppearance: ![MyAppearance](../MyPicture.JPG "我的头像")
 ----------
 
 <pre>

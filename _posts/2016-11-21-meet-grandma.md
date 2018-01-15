@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "终于到家"
-subtitle:   "2016/11/21 到家"
+title:      "去姥姥家"
+subtitle:   "2016/11/21 和姥姥见面"
 date:       2016-11-21
 author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20161121.jpg?raw=true"
@@ -13,7 +13,6 @@ tags:
 -----
 #####   Author:冬之晓::angry::
 #####   Email: 347916416@qq.com
-#####   MyAppearance: ![MyAppearance](../MyPicture.JPG "我的头像")
 ----------
 
 <pre>

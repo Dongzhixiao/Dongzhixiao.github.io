@@ -1,8 +1,18 @@
+---
+layout:     post
+title:      "看矩阵论，看不懂！"
+subtitle:   "2016/12/09 好难"
+date:       2016-12-09
+author:     "WangXiaoDong"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20161209.jpg?raw=true"
+tags:
+    - 日记
+---
+
 ### 时间:2016年12月9日 天气:阴:cloud:
 -----
 #####   Author:冬之晓:angry:
 #####   Email: 347916416@qq.com
-#####   MyAppearance: ![MyAppearance](../MyPicture.JPG "我的头像")
 ----------
 
 <pre>

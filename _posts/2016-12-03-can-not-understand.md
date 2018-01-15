@@ -1,8 +1,18 @@
+---
+layout:     post
+title:      "周六看书"
+subtitle:   "2016/12/03 看不懂矩阵论"
+date:       2016-12-03
+author:     "WangXiaoDong"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20161203.jpg?raw=true"
+tags:
+    - 日记
+---
+
 ### 时间:2016年12月3日 天气:晴:sunny:
 -----
 #####   Author:冬之晓:confounded:
 #####   Email: 347916416@qq.com
-#####   MyAppearance: ![MyAppearance](../MyPicture.JPG "我的头像")
 ----------
 
 <pre>

@@ -1,8 +1,18 @@
+---
+layout:     post
+title:      "田田姐姐支持我"
+subtitle:   "2016/11/30 准备复习"
+date:       2016-11-30
+author:     "WangXiaoDong"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20161130.jpg?raw=true"
+tags:
+    - 日记
+---
+
 ### 时间:2016年11月30日 天气:晴:sunny:
 -----
 #####   Author:冬之晓:confounded:
 #####   Email: 347916416@qq.com
-#####   MyAppearance: ![MyAppearance](../MyPicture.JPG "我的头像")
 ----------
 
 <pre>
