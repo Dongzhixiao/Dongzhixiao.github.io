@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "看矩阵论，看不懂！"
-subtitle:   "2016/12/09 好难"
+subtitle:   "2016/12/09 回家休息"
 date:       2016-12-09
 author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20161209.jpg?raw=true"
