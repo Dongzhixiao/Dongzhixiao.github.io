@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      "过完年会焦作"
-subtitle:   "2017/04/03 回归复习"
-date:       2017-04-03
+title:      "一天的面试"
+subtitle:   "2017/04/11 心累"
+date:       2017-04-11
 author:     "WangXiaoDong"
-header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20170403.jpg?raw=true"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20170411.jpg?raw=true"
 tags:
     - 日记
 ---
@@ -13,7 +13,6 @@ tags:
 -----
 #####   Author:冬之晓:angry:
 #####   Email: 347916416@qq.com
-#####   MyAppearance: ![MyAppearance](../MyPicture.JPG "我的头像")
 ----------
 
 <pre>
