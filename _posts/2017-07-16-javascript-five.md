@@ -6,7 +6,7 @@ date:       2017-07-16
 author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20170716.jpg?raw=true"
 tags:
-    - C
+    - JavaScript
 ---
 
 ### 时间:2017年4月28日 天气:阴:cloud:
