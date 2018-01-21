@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "矩阵基础(四)"
-subtitle:   "向量的线性相关性  向量张成的空间  向量空间的基 正交向量和正交空间 求解无解方程的最优解"
+subtitle:   "2017/09/01 向量的线性相关性  向量张成的空间  向量空间的基 正交向量和正交空间 求解无解方程的最优解"
 date:       2017-09-01
 author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20170817.jpg?raw=true"

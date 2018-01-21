@@ -1,8 +1,8 @@
 ---
 layout:     post
 title:      "机器学习（四）"
-subtitle:   "正则化(Regularization)"
-date:       2017-09-17
+subtitle:   "2017/08/25 正则化(Regularization)"
+date:       2017-08-25
 author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20170805.jpg?raw=true"
 tags:
@@ -10,7 +10,7 @@ tags:
 ---
 
 
-### 时间:2017年9月17日 天气:阴:cloud:
+### 时间:2017年8月25日 天气:阴:cloud:
 -----
 #####   Author:冬之晓:angry:
 #####   Email: 347916416@qq.com

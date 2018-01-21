@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "矩阵基础(三)"
-subtitle:   "向量空间和子空间  用矩阵构造空间  矩阵的秩 可解性和解的结构"
+subtitle:   "2017/08/30 向量空间和子空间  用矩阵构造空间  矩阵的秩 可解性和解的结构"
 date:       2017-08-30
 author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20170817.jpg?raw=true"

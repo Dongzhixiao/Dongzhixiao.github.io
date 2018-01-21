@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "指定计划"
+title:      "制定计划"
 subtitle:   "2016/12/15 效率提高"
 date:       2016-12-15
 author:     "WangXiaoDong"

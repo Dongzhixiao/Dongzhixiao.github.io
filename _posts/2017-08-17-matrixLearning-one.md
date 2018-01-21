@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "矩阵基础(一)"
-subtitle:   "矩阵相乘  线性方程组的矩阵理解  用高斯消元法解线性方程组"
+subtitle:   "2017/08/17 矩阵相乘  线性方程组的矩阵理解  用高斯消元法解线性方程组"
 date:       2017-08-17
 author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20170817.jpg?raw=true"

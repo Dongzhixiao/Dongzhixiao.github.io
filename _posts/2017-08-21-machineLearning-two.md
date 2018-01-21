@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "机器学习（二）"
-subtitle:   "线性方程拟合的正规方程法*（推荐网址）"
+subtitle:   "2017/08/21 线性方程拟合的正规方程法*（推荐网址）"
 date:       2017-08-21
 author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20170805.jpg?raw=true"

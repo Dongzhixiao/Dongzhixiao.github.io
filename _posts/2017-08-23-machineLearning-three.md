@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "机器学习（三）"
-subtitle:   "逻辑回归"
+subtitle:   "2017/08/23 逻辑回归"
 date:       2017-08-23
 author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20170805.jpg?raw=true"
