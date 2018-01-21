@@ -15,16 +15,16 @@ tags:
 #####   Email: 347916416@qq.com
 ----------
 
-#SQL(StructuredQueryLanguage)    
+# SQL(StructuredQueryLanguage)    
 相当于画一个表格----先画列，再画行
 处于可读性的考虑，一般可以关键字全部大写，非关键字全部小写
 (注：后面的例子使用的软件是MySQL/Navicat for MySOL)
 
-##DDL(DataDefinitionLanguage,数据定义语言)
+## DDL(DataDefinitionLanguage,数据定义语言)
 DDL是对数据库对象进行操作的语言，数据库对象包括
 表、视图、索引、序列。
 
-###创建表的语法
+### 创建表的语法
 create table ：列 表结构
 表名(
 列名 数据类型长度 约束，
@@ -45,17 +45,17 @@ CREATE TABLE employee_dongzhixiao(
 );
 ```
 
-###查询表语法
+### 查询表语法
 DESC table_name:查看表结构
 看到表的列的名字，以及对应的类型，长度等
 例如：`DESC employee_dongzhixiao;`
 
 
-###删除一张表的语法
+### 删除一张表的语法
 DROP TABLE table_name
 例如：`DROP TABLE employee_dongzhixiao`
 
-###DEFAULT关键字
+### DEFAULT关键字
 用于为给定的列(字段)设置默认值
 例如：
 
@@ -76,11 +76,11 @@ CREATE TABLE employee_dongzhixiao(
 数据库中的字符串字面量是使用单引号的，虽然SQL语句
 本身不区分大小写，但是字符串值是区分大小写的！
 
-###NOT NULL约束
+### NOT NULL约束
 在创建表的时候可以为列添加非空约束，被约束的
 列在插入数据时必须给值。此列不允许为空。
 
-###修改表名
+### 修改表名
 RENAME TABLE old_name TO new_name
 
 需要注意：新的表名不能是数据库中现有的表
@@ -88,7 +88,7 @@ RENAME TABLE old_name TO new_name
 `RENAME TABLE employee_dongzhixiao TO emp_dongzhixiao`
 
 
-###修改表:
+### 修改表:
 为表添加新的字段(列),总是在表的最后一列追加
 ALTER TABLE emp_dongzhixiao ADD
 (
@@ -97,16 +97,16 @@ ALTER TABLE emp_dongzhixiao ADD
 	...
 )
 
-##ADD (hiredate DATE DEFAULT sysdate);
+## ADD (hiredate DATE DEFAULT sysdate);
 
 sysdate是一个日期的值，表示当前系统时间。
 
 
-###从表中删除一列
+### 从表中删除一列
 ALTER TABLE emp_dongzhixiao
 DROP (hiredate);
 
-###修改表中现有的列
+### 修改表中现有的列
 ALTER TABLE emp_dongzhixiao
 MODIFY job VARCHAR(40) DEFAULT 'CLERK'
 注意：MySQL不支持一次修改多个列，其他数据库如Oracle支持一个MODIFY命令修改多个列定义
@@ -118,8 +118,8 @@ MODIFY job VARCHAR(40) DEFAULT 'CLERK'
 3:修改后的字段，只对新插入的数据产生影响，
    修改字段前的所有数据不影响。
 
-##DML操作
-###向表中插入数据
+## DML操作
+### 向表中插入数据
 INSERT INTO table_name
 VALUES(1,'冬之晓',28,'男',0)
 
@@ -149,10 +149,10 @@ INSERT INTO emp_dongzhixiao(id,name,salary)
 VALUES(3,'JERRY',3500)
 ```
 
-###查询表数据
+### 查询表数据
 SELECT   *    FROM    emp_dongzhixiao
 
-###事务控制:
+### 事务控制:
 
 - COMMIT
 用于提交事务。
@@ -161,7 +161,7 @@ SELECT   *    FROM    emp_dongzhixiao
 用于回滚事务。那么本次事务中所有的增删改操作
 全部失效。
 
-###日期格式化函数
+### 日期格式化函数
 str_to_date('2012-05-01 23:59:59','%Y-%m-%d %T')
  上函数转换为DATE数据类型----用于表示 年月日，如果实际应用值需要保存 年月日 就可以使用 DATE。 
  
@@ -196,7 +196,7 @@ VALUES
   (1,'jack',str_to_date('1989-11-08','%Y-%m-%d'))
 ```
 
-###修改表中的数据
+### 修改表中的数据
 
 UPDATE table_name
 SET  column1 = value1[, column2 = value2,....]
@@ -217,7 +217,7 @@ SQL中的比较可以比较数值、字符串、日期的大小。
 来指定过滤条件，若不指定WHERE则是全表修改
 通常不会这样做。
 
-###从表中删除数据
+### 从表中删除数据
 
 DELETE FROM table_name
 [WHEN condition];
