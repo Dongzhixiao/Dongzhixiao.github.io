@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "过完年会焦作"
+title:      "过完年回焦作"
 subtitle:   "2017/02/06 回归复习"
 date:       2017-02-06
 author:     "WangXiaoDong"
