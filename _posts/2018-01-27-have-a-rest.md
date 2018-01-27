@@ -7,7 +7,8 @@ author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180127.jpg?raw=true"
 tags:
     - 日记
-    - 总结
+    - Seaborn
+    - Python
 ---
 
 ```
@@ -28,6 +29,7 @@ tags:
 
 ### Seaborn函数的标签与API规律
 
+查看Seaborn官网的(API)[]，可以看到整个Seaborn画图就只有
 
 ### 进行数据预处理
 
