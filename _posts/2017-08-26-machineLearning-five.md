@@ -42,12 +42,16 @@ $$
 这个看起来复杂很多的代价函数背后的思想还是一样的，我们希望通过代价函数来观察算法预测的结果与真实情况的误差有多大，唯一不同的是，对于每一行特征，我们都会给出K 个预测，基本上我们可以利用循环，对每一行特征都预测 K 个不同结果，然后在利用循环在 K 个预测中选择可能性最高的一个，将其与 y 中的实际数据进行比较。
 归一化的那一项只是排除了每一层 θ0 后，每一层的 θ  矩阵的和。最里层的循环 j  循环所有的行（由  sl +1  层的激活单元数决定），循环 i 则循环所有的列，由该层（sl 层）的激活单元数所决定。即：hθ(x)与真实值之间的距离为每个样本-每个类输出的加和，对参数进行egularization 的 bias 项处理所有参数的平方和。
 
-##反向传播算法
-网上有很好的证明过程，请看网址：http://ufldl.stanford.edu/wiki/index.php/%E5%8F%8D%E5%90%91%E4%BC%A0%E5%AF%BC%E7%AE%97%E6%B3%95
-还有一篇更详细的：
-http://blog.csdn.net/itplus/article/details/11022243
+## 反向传播算法
+网上有很好的证明过程，请看网址：
 
-##小结
+[http://ufldl.stanford.edu/wiki/index.php/%E5%8F%8D%E5%90%91%E4%BC%A0%E5%AF%BC%E7%AE%97%E6%B3%95](http://ufldl.stanford.edu/wiki/index.php/%E5%8F%8D%E5%90%91%E4%BC%A0%E5%AF%BC%E7%AE%97%E6%B3%95)
+
+还有一篇更详细的：
+
+[http://blog.csdn.net/itplus/article/details/11022243](http://blog.csdn.net/itplus/article/details/11022243)
+
+## 小结
 小结一下使用神经网络时的步骤：
 
 网络结构：第一件要做的事是选择网络结构，即决定选择多少层以及决定每层分别有多少个单元。
