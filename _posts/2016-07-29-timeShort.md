@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
     return app.exec();
 }
 ```
-显示的结果是: ![ExitButton](../diaryPic/ExitButton.png "Exitbutton")  
+显示的结果是: ![ExitButton](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/ExitButton.jpg?raw=true "Exitbutton")  
 程序逻辑中的`connect`就是实现了信号和槽的连接，这样单击图片中的exit按钮，就退出了程序。
 
 有了基本的信号和槽的知识，就可以使用更加复杂的信号和槽，比如下面的例子：
@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
 }
 ```
 
-显示的结果是: ![InputAge](../diaryPic/InputAge.png "InputAge")  
+显示的结果是: ![InputAge](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/InputAge.png?raw=true "InputAge")  
 程序逻辑中的两个`connect`信号和槽的连接，保证了里面的两个控件`QSpinBox`和`QSlider`之间的通信，使其相互影响，对应的输入数字保持一致。
 
 ##### 对话框编程

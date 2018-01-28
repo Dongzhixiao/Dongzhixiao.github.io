@@ -32,7 +32,6 @@ tags:
 ##### 命名习惯
 
 - `lhs(left-hand side)`和`rhs(right-hand side)`通常作为二元操作符函数的参数名称：
-
 `const Rational operator* (const Rational &lhs,const Rational &rhs);`
 
 - **指向一个T型对象**命名为pt，即`pointer to T`：

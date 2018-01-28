@@ -44,4 +44,54 @@
     <script type="text/javascript"
         src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
+    <!-- 下面是可以使用悬浮回到顶部的样式和js -->
+    <style type="text/css">    
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width:1000px;
+            margin:  0  auto;
+        }
+        #btn {
+            width:40px;
+            height: 40px;
+            position:fixed;
+            left:50%;
+            bottom:30px;
+            background:url(./img/XX.jpg)  no-repeat  left top ;
+            margin-left: 610px;
+        }
+        #btn:hover {
+            background:url(./img/XX.jpg)  no-repeat  left -40px;
+        }  
+    </style>  
+    <script type="text/javascript">
+        indow.onload = function () {
+            var topbtn = document.getElementById("btn");
+            var timer = null;<br>    //获取屏幕的高度
+            var pagelookheight = document.documentElement.clientHeight;
+         
+            window.onscroll = function(){
+                //滚动超出高度，显示按钮，否则隐藏
+                var backtop = document.body.scrollTop;<br>           //  滚动超过一频    应该显示
+                if(backtop >= pagelookheight){
+                    topbtn.style.display = "block";
+                }<br>      //   不显示<br>       else{
+                    topbtn.style.display = "none";
+                }
+            }
+         
+            topbtn.onclick = function () {<br>         timer = setInterval(function () {
+                    var backtop = document.body.scrollTop;  <br>              //速度操作  减速
+                    var speedtop = backtop/5;  
+                    document.body.scrollTop = backtop -speedtop;  //高度不断减少
+                    if(backtop ==0){  //滑动到顶端
+                        clearInterval(timer);  //清除计时器
+                    }
+                }, 30);
+            }
+        }
+    </script>
 </head>
