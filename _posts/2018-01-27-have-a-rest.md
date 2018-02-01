@@ -44,8 +44,16 @@ tags:
 而且每个标签里面的子函数传入参数非常类似，只要掌握一个，其他的直接改下函数名字即可画出来，因此实际
 学习Seaborn画图只要看七个函数说明即可！
 
-我画图时主要用到了其中的`Categorical plots`模块下的函数。下面主要说明下
+我画图时主要用到了其中的`Categorical plots`模块下的函数。下面主要以`seaborn.stripplot`函数为例子说明如下：
 
+`seaborn.stripplot(x=None, y=None, hue=None, data=None, order=None, hue_order=None, jitter=False, dodge=False, orient=None, color=None, palette=None, size=5, edgecolor='gray', linewidth=0, ax=None, **kwargs)`
+
+这个函数的最关键的参数就是前4个参数，后面的参数都是微调的问题。
+
+- `x`参数代表
+- `y`参数代表
+- `hue`参数代表
+- `data`参数代表输入数据，一般格式都是`DataFrame`的形式。
 
 ### 进行数据预处理
 
