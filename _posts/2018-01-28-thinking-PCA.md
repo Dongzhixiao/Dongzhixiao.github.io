@@ -56,3 +56,6 @@ $$
 $$\lambda_j$$是样本数据协方差矩阵第j个主成分投影在子空间的特征值。
 $$C_\alpha$$是标准正态分布的$$1-\alpha$$百分位数。
 
+最后，本篇的全部代码在下面这个网页可以下载：
+
+[https://github.com/Dongzhixiao/Python_Exercise/tree/master/hierarchy](https://github.com/Dongzhixiao/Python_Exercise/tree/master/hierarchy)
