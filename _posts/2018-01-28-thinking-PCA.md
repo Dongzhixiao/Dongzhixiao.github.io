@@ -231,9 +231,9 @@ if __name__ == '__main__':
 
 这样得到的图像如下：
 
-![](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180128_boxplot.png?raw=true)
-![](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180128_histplot.png?raw=true)
-![](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180128_violinplot.png?raw=true)
+![盒状图](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180128_boxplot.png?raw=true)
+![直方图](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180128_histplot.png?raw=true)
+![小提琴图](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180128_violinplot.png?raw=true)
 
 最后，本篇的全部代码在下面这个网页可以下载：
 
