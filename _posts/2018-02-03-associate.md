@@ -2,7 +2,7 @@
 layout:     post
 title:      "周六总结"
 subtitle:   "2018/02/03 关联分析"
-date:       2018-02-02
+date:       2018-02-03
 author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180203.jpg?raw=true"
 tags:
@@ -13,7 +13,15 @@ tags:
 ---
 
 ```
-    今天周六，我一早来到了实验室，发现昨天晚上清理的东西还没有完成
+    今天周六，我一早来到了实验室，发现昨天晚上清理的东西还没有完成，那就继续清理，过了一会，曹老师
+又过来加班了，我看了一会关联规则，就快到中午了。刘伯禹让一位学生来我这领取一个电脑检查的工具，我一看，
+是李瑞林师姐，师姐显然不认识我，还叫我王晓东老师。呵呵，我坐在小办公室确实很容易被叫做老师。
+    中午，因为和师兄有约，所有我必须早点走。师兄今天下午要坐飞机飞往美国，所以临别想和师兄吃一顿饭。
+顺便祝愿师兄在美国一帆风顺！一起吃饭的还有另一位准备出国的同学，名叫李春。跟他聊天，发现他认识实验室的
+同学小灿，原来他们以前都是中央名族大学毕业的，只不过李春师兄硕士毕业时，小灿刚本科毕业。而现在李春师兄
+在读博二，小灿已经博一了，这证明硕博连读确实比较节约时间。
+    下午，送走师兄后，我来到小明的实验室，和他一起讨论关联分析问题，顺便把关联分析给总结了一下，加深印象。
+    晚上，准备总结一下异常检测的问题，结果感觉非常困，就早点睡觉吧~
 ```
 
 
@@ -21,7 +29,7 @@ tags:
 
 ### 选择函数包
 
-关联分析属于数据挖掘的一大类。我发现的包有两个：
+关联分析属于数据挖掘的一大类。我发现的python语言实现的包有两个：
 
 - [pymining](https://github.com/bartdag/pymining "pymining网址")：根据Apriori算法进行关联规则挖掘
 - [Orange3的关联规则库](https://github.com/biolab/orange3-associate)：根据FP-growth算法进行关联规则挖掘
@@ -173,5 +181,133 @@ listToAnalysis = []
 ### 使用关联相关的函数进行数据处理
 
 将输入数据的格式完成之后，就可以使用关联规则函数进行数据挖掘了。
+进入函数说明文档[页面](http://orange3-associate.readthedocs.io/en/latest/scripting.html)
 
-首先第一个函数``
+首先看第一个函数`fpgrowth.frequent_itemsets(X, min_support=0.2)`
+这个函数代表计算给定支持度下得到的频繁项集，返回的是一个频繁项集的列表生成器。
+
+- X代表输入的数组类型的数据(list or numpy.ndarray or scipy.sparse.spmatrix or iterator))
+- min_support代表关联规则设置的置信度，默认为0.2
+
+>注意：该函数返回的列表生成器只能使用一次，我在这里调试时出了好多次错误，每次用完后我调用这个生成器，
+然后总是得到空集，所以干脆直接返回值包上字典函数`dict`并返回给变量`itemsets`，这样可以多次使用
+
+预处理做好了，这里分析仅仅一行代码即可：
+
+```
+itemsets = dict(oaf.frequent_itemsets(listToAnalysis, .02)) #这里设置支持度
+```
+
+返回的`itemsets`就是频繁项集，这时可以调用第二个函数`fpgrowth.association_rules(itemsets, min_confidence, itemset=None)`
+这个函数代表在给定置信度和第一步得到的频繁项集的情况下得到关联规则
+
+- itemsets代表第一个函数返回的字典数据集
+- min_confidence代表关联规则设置的支持度
+- itemset代表仅仅生成该频繁项集下的规则，这个项集必须是itemsets这个字典里的一个键，数据结构格式是`frozenset`，例如`frozenset({'TimeInterval_100_200'})`
+
+>注意：该函数返回的列表生成器只能使用一次，我在这里调试时出了好多次错误，每次用完后我调用这个生成器，
+然后总是得到空集，所以干脆直接返回值包上列表函数`list`并返回给变量`itemsets`，这样可以多次使用
+
+关联规则生成仅仅两行代码即可：
+
+```
+rules = oaf.association_rules(itemsets, .5)   #这里设置置信度
+rules = list(rules)
+```
+
+`rules`的结果是元祖，每一个值都是`frozenset,frozenset,suport,confidence`形式，例如：
+`(frozenset({'AT_地球科学', 'C_IGSNRR,CAS', 'TI_100_200'}), frozenset({'RN_0_20'}), 7, 1.0)`
+我为了使结果更有利于观察，自己加了个函数得到可打印的便于观察的规则，代码如下：
+
+```
+def dealResult(rules):
+    returnRules = []
+    for i in rules:
+        temStr = '';
+        for j in i[0]:   #处理第一个frozenset
+            temStr = temStr+j+'&'
+        temStr = temStr[:-1]
+        temStr = temStr + ' ==> '
+        for j in i[1]:
+            temStr = temStr+j+'&'
+        temStr = temStr[:-1]
+        temStr = temStr + ';' +'\t'+str(i[2])+ ';' +'\t'+str(i[3])+ ';' +'\t'+str(i[4])+ ';' +'\t'+str(i[5])+ ';' +'\t'+str(i[6])+ ';' +'\t'+str(i[7])
+#        print(temStr)
+        returnRules.append(temStr)
+    return returnRules
+
+printRules = dealRules(rules)
+```
+
+这里可以打印`printRules`观察结果
+
+返回的规则`rules`就是规则列表，即可调用第三个函数`fpgrowth.rules_stats(rules, itemsets, n_examples)`
+这个函数代表在给规则列表和频繁项集和总样例数目的情况下得到关联规则相关评价结果
+
+- rules代表第二个函数得到的规则列表
+- itemsets代表第一个函数返回的字典数据集
+- n_examples代表实例的总数
+
+代码如下：
+```
+result = list(oaf.rules_stats(rules, itemsets, len(listToAnalysis)))   #下面这个函数改变了rules和itemsets，把rules和itemsets置空！
+```
+
+>注意，使用完第三个函数后，输入的itemsetes和rules都空了！
+
+为了使得结果便于观察和保存，我最近实现了一个函数，将结果清晰的写到一个`excel`表格里面，代码如下：
+
+```
+def ResultDFToSave(rules):   #根据Qrange3关联分析生成的规则得到并返回对于的DataFrame数据结构的函数
+    returnRules = []
+    for i in rules:
+        temList = []
+        temStr = '';
+        for j in i[0]:   #处理第一个frozenset
+            temStr = temStr + str(j) + '&'
+        temStr = temStr[:-1]
+        temStr = temStr + ' ==> '
+        for j in i[1]:
+            temStr = temStr + str(j) + '&'
+        temStr = temStr[:-1]
+        temList.append(temStr); temList.append(i[2]); temList.append(i[3]); temList.append(i[4])
+        temList.append(i[5]); temList.append(i[6]); temList.append(i[7])
+        returnRules.append(temList)
+    return pd.DataFrame(returnRules,columns=('规则','项集出现数目','置信度','覆盖度','力度','提升度','利用度'))
+ 
+
+dfToSave = ResultDFToSave(result)
+dfToSave.to_excel('regular.xlsx')
+```
+
+### 置信度和支持度的选择
+
+置信度和支持度一般都是根据几个数据得到的规则数目自己选择的，我编写了一个程序，可以得到不同置信度和支持度下生成规则的数目，
+用来决定具体选择多少，代码如下：
+
+```
+#######################################################下面是根据不同置信度和关联度得到关联规则数目
+    listTable = []
+    supportRate = 0.1
+    confidenceRate = 0.1
+    for i in range(9):
+        support = supportRate*(i+1)
+        listS = []
+        for j in range(9):
+            confidence = confidenceRate*(j+1)
+            itemsets = dict(oaf.frequent_itemsets(listToAnalysis, support))
+            rules = list(oaf.association_rules(itemsets, confidence))
+            listS.append(len(rules))
+        listTable.append(listS)    
+    dfList = pd.DataFrame(listTable,index = [supportRate*(i+1) for i in range(9)],columns=[confidenceRate*(i+1) for i in range(9)])
+    dfList.to_excel('regularNum.xlsx')
+```
+
+最后，本篇的全部代码在下面这个网页可以下载：
+
+[https://github.com/Dongzhixiao/Python_Exercise/tree/master/associate](https://github.com/Dongzhixiao/Python_Exercise/tree/master/associate)
+
+
+
+
+
