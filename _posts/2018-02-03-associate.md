@@ -31,8 +31,8 @@ tags:
 
 关联分析属于数据挖掘的一大类。我发现的python语言实现的包有两个：
 
-- [pymining](https://github.com/bartdag/pymining "pymining网址")：根据Apriori算法进行关联规则挖掘
-- [Orange3的关联规则库](https://github.com/biolab/orange3-associate)：根据FP-growth算法进行关联规则挖掘
+- <a target="_blank" href="https://github.com/bartdag/pymining">pymining</a>：根据Apriori算法进行关联规则挖掘
+- <a target="_blank" href="https://github.com/biolab/orange3-associate">Orange3的关联规则库</a>：根据FP-growth算法进行关联规则挖掘
 
 经过分析，我决定使用`Oranges`进行关联规则的实现，原因如下：
 
@@ -83,7 +83,7 @@ array([[False,  True, ...,  True, False],
 
 #### 对于字符串类型
 这里我们输入就不要求每个数据的维度相同了，我们仅仅把出现的属性字符给输入进去即可。
-比如下面的例子，我把上次爬虫得到的数据进行关联规则分析。
+比如下面的例子，我把<a target="_blank" herf="https://dongzhixiao.github.io/2018/01/21/relax/">上次爬虫得到的数据</a>进行关联规则分析。
 
 输入数据的excel表格为`NS_new.xls`,表格内容截图如下：
 
@@ -95,7 +95,7 @@ array([[False,  True, ...,  True, False],
 
 时间差需要操作两个列属性，而且两个列属性之间的减法是时间日期相关的操作，涉及到每个月份不一样，最好能之间调用系统的函数。
 这样就需要自己考虑年月之间的详细变化了，下面之间使用`Datafram`里面的`apply`函数进行列的操作，具体`apply`函数的总结放到
-[明天]()。
+<a target="_blank" href="https://dongzhixiao.github.io/2018/02/04/pandas/">明天</a>。
 
 ```
 import pandas as pd
@@ -181,7 +181,7 @@ listToAnalysis = []
 ### 使用关联相关的函数进行数据处理
 
 将输入数据的格式完成之后，就可以使用关联规则函数进行数据挖掘了。
-进入函数说明文档[页面](http://orange3-associate.readthedocs.io/en/latest/scripting.html)
+进入函数说明文档<a target="_blank" href="http://orange3-associate.readthedocs.io/en/latest/scripting.html">页面</a>
 
 首先看第一个函数`fpgrowth.frequent_itemsets(X, min_support=0.2)`
 这个函数代表计算给定支持度下得到的频繁项集，返回的是一个频繁项集的列表生成器。
@@ -305,8 +305,7 @@ dfToSave.to_excel('regular.xlsx')
 
 最后，本篇的全部代码在下面这个网页可以下载：
 
-[https://github.com/Dongzhixiao/Python_Exercise/tree/master/associate](https://github.com/Dongzhixiao/Python_Exercise/tree/master/associate)
-
+<a target="_blank" href="https://github.com/Dongzhixiao/Python_Exercise/tree/master/associate">https://github.com/Dongzhixiao/Python_Exercise/tree/master/associate</a>
 
 
 
