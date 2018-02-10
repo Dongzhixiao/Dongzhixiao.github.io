@@ -21,12 +21,12 @@ tags:
 ----------
 
 <pre>
-    今天，一天都比较晕，不知道为啥，估计这几天看电脑看的时间太长了，今天晚上必须早点睡了
-。突然发现自己必须也要注意身体，做程序真的是很费体力的。最近快到中秋节了，单位发了一张购
+    今天，一天都比较头晕，不知道为啥，估计这几天电脑看的时间太长了，今天晚上必须早点睡了
+。以后也要适当注意身体，做程序真的是很费体力的。最近快到中秋节了，单位发了一张购
 物券，中秋节的时候准备去买点东西吃，呵呵。
 </pre>
 
-今天的工作中，遇到一个需求，就是界面的一个对话框中需要填入需求的字符串，因为如果填的字符串是随意的内容的话，下载到下位机上可能会使得下位机崩溃。因此我研究了一下Qt中的`QLineEdit`控件中使用正则表达式。首先查了一些文档，并且对此进行设置，发现只要新建一个`QLineEdit`后调用其中的`QLineEdit::setValidator(const QValidator * v)`即可。其中的`QValidator`派生了四个类`QDoubleValidator, QIntValidator, QRegExpValidator, 和 QRegularExpressionValidator`。根据多态直接传入其子类`QRegExpValidator`或者`QRegularExpressionValidator`即可进行正则表达式的输入。其中`QRegExpValidator`构造时传入的`QRegExp`类来进行正则表达式的构造。Qt5出来后推荐使用`QRegularExpressionValidator`传入的参数`QRegularExpression`进行正则表达式的构造。
+今天在工作中，遇到一个需求，就是界面的一个对话框中需要填入需求的字符串，因为如果填的字符串是随意的内容的话，下载到下位机上可能会使得下位机崩溃。因此我研究了一下Qt中的`QLineEdit`控件中使用正则表达式。首先查了一些文档，并且对此进行设置，发现只要新建一个`QLineEdit`后调用其中的`QLineEdit::setValidator(const QValidator * v)`即可。其中的`QValidator`派生了四个类`QDoubleValidator, QIntValidator, QRegExpValidator, 和 QRegularExpressionValidator`。根据多态直接传入其子类`QRegExpValidator`或者`QRegularExpressionValidator`即可进行正则表达式的输入。其中`QRegExpValidator`构造时传入的`QRegExp`类来进行正则表达式的构造。Qt5出来后推荐使用`QRegularExpressionValidator`传入的参数`QRegularExpression`进行正则表达式的构造。
 
 当然构造的方式我就不详细说了，网上一搜有好多。这里举一个使用正则表达式限制`QLineEdit`的测试例子：
 

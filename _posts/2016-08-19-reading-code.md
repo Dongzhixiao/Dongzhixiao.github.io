@@ -43,7 +43,7 @@ Qt之所以非常适合编写界面程序，是因为它可以方便的进行拖
 
 #### 自定义comboBox
 
-为了实现comboBox控件单击时显示被选中的条目有提示，同时comboBox自己没有按下时响应的信号，因此我只能自己重新实现一个按下时触发的信号，实现时通过实现其父类QWidget的虚函数mousePressEvent(QMouseEvent *event)来响应按压事件，并发送对应信号，的具体实现代码如下：
+为了实现comboBox控件单击时显示被选中的条目有提示，同时comboBox自己没有按下时响应的信号，所以我重新实现一个按下时触发的信号，实现时通过实现其父类QWidget的虚函数mousePressEvent(QMouseEvent *event)来响应按压事件，并发送对应信号，的具体实现代码如下：
 
 ```C++
 class ComboBox:public QComboBox
