@@ -15,4 +15,10 @@ tags:
 拍照。最后，在游览了老城的丹尼斯后满足的回家了。
 ```
 
+下面是去洛浦公园的照片：
 
+![照片](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180221_1.jpg?raw=true)
+
+![照片](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180221_2.jpg?raw=true)
+
+![照片](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180221_3.jpg?raw=true)
