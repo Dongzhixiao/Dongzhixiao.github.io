@@ -83,7 +83,8 @@ array([[False,  True, ...,  True, False],
 
 #### 对于字符串类型
 这里我们输入就不要求每个数据的维度相同了，我们仅仅把出现的属性字符给输入进去即可。
-比如下面的例子，我把<a target="_blank" herf="https://dongzhixiao.github.io/2018/01/21/relax/">上次爬虫得到的数据</a>进行关联规则分析。
+比如下面的例子，我把<a target="_blank" href="https://dongzhixiao.github.io/2018/01/21/relax/">上次爬虫得到的数据</a>
+进行关联规则分析。
 
 输入数据的excel表格为`NS_new.xls`,表格内容截图如下：
 
