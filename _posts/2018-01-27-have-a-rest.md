@@ -26,6 +26,7 @@ tags:
 有100样本，每个样本8个属性的数据，如下图：
 
 
+
 我需要画出这些数据。
 
 ### Seaborn函数的标签与API规律
@@ -57,7 +58,8 @@ tags:
 
 我们可以看一个`Seaborn`自带的例子，将数据读取，然后保存成`excel`文件并打开观察
 （这里顺便吐槽一下，DataFrame数据结构实在是太好用、太方便了，可以读取/保存成各种数据格式，
-并且操作数据非常方便，下周周末要总结一下！），代码如下：
+并且操作数据非常方便，<a target="_blank" href="https://dongzhixiao.github.io/2018/02/04/pandas/">下周周末</a>要总结一下！），
+代码如下：
 
 ```Python
     import seaborn as sns
