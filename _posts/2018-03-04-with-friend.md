@@ -24,3 +24,8 @@ tags:
 
 今天游览的照片如下：
 
+![照片](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180304_1.jpg?raw=true)
+
+![照片](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180304_2.jpg?raw=true)
+
+![照片](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180304_3.jpg?raw=true)

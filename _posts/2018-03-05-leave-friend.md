@@ -27,3 +27,4 @@ tags:
 
 今天拍的照片如下：
 
+![照片](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180305_1.jpg?raw=true)
