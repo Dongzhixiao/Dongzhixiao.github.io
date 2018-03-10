@@ -19,12 +19,6 @@ tags:
 才能不虚此生，我们相约在以后读博的路上，互相学习，努力进取！今天感觉有点累，就早点回去睡觉了。
 ```
 
-
-今天的工作总结：
-
-1、根据分位点的不同来得到异常类型
-2、关联分析整体方法的带入，将python程序根据实现功能分开
-
 今天拍的照片如下：
 
 ![照片](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180305_1.jpg?raw=true)
