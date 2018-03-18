@@ -31,7 +31,7 @@ tags:
 
 ### Seaborn函数的标签与API规律
 
-查看Seaborn官网的[API](http://seaborn.pydata.org/api.html)，可以看到整个Seaborn画图的实际绘画模块只有
+查看Seaborn官网的<a target="_blank" href="http://seaborn.pydata.org/api.html">API</a>，可以看到整个Seaborn画图的实际绘画模块只有
 以下七个标签：
 
 - Axis grids
