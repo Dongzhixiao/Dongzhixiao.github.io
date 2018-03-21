@@ -82,19 +82,13 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "Hux Blog",
-        href: "#"
+        title: "pluskid",
+        href: "http://blog.pluskid.org/"
     },{
-        title: "Foo",
-        href: "#"
-    },{
-        title: "Bar",
-        href: "#"
+        title: "pluskid_new",
+        href: "http://pluskid.org/"
     },{
         title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
         href: "#"
     }
 ]
