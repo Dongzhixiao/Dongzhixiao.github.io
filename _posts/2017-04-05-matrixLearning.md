@@ -7,6 +7,7 @@ author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20170817.jpg?raw=true"
 tags:
     - 矩阵学习
+    - Latex语法
 ---
 
 ### 时间:2017年4月5日 天气:阴:cloud:
@@ -21,8 +22,8 @@ tags:
 第一条：矩阵分解-->矩阵的广义逆-->求解不相容线性方程组的最小二乘解
 第二条：Jordan标准型-->矩阵函数-->求解线性微分方程组
 
-为了能够写出矩阵的公式，我使用了Latex语法，下面是其常用语法的网址：[Latex常用语法网址](http://www.mohu.org/info/symbols/symbols.htm)
-为了可以根据手写符号得到对应形状的Latex结构，可以使用这个网址：[Latex手写反求对应符号网址](http://detexify.kirelabs.org/classify.html)
+为了能够写出矩阵的公式，我使用了Latex语法，下面是其常用语法的网址：<a target="_blank" href="http://www.mohu.org/info/symbols/symbols.htm">Latex常用语法网址</a>
+为了可以根据手写符号得到对应形状的Latex结构，可以使用这个网址：<a target="_blank" href="http://detexify.kirelabs.org/classify.html">Latex手写反求对应符号网址</a>
 
 后期准备按照这两条线，把学习的东西总结一下，以便以后随时复习~
 
