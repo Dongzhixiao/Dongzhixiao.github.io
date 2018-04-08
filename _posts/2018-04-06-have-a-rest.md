@@ -7,6 +7,7 @@ author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180406.jpg?raw=true"
 tags:
     - 日记
+    - 凸优化
 ---
 
 >We will not go quietly into the night! We will not vanish without a fight!
@@ -20,8 +21,7 @@ tags:
     晚上，小明邀请我一起去鱼，一共两锅鱼汤和鱼肉，非常美味！非常感谢小明！
 ```
 
-下面只记录需要记忆的重点
-
+下面开始学习凸优化
 
 ### 凸函数
 
@@ -63,21 +63,5 @@ $$\theta_1+ \cdots +\theta_k=1$$，则下式成立：
 
 $$f(\theta_1 x_1+ \cdots + \theta_k x_k) \le theta_1 f(x_1)+ \cdots + \theta_k f(x_k) $$
 
-### 保凸运算
-
-#### 非负加权求和
-
-#### 复合仿射映射
-
-#### 逐点最大和逐点上确界
-
-#### 复合
-
-#### 最小化
-
-#### 透视函数
-
-### 共轭函数
-
-可微函数的共轭函数有称为该函数的Legendre变换！！（看到了吧，学习凸优化的重要性！机器学习好多推导都用到了拉格朗日变换！！！）
+后面的下次再总结！
 
