@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      ""
-subtitle:   "2018/04/15 研究讨论"
+title:      "继续研究pyqt"
+subtitle:   "2018/04/15 学pyqt"
 date:       2018-04-15
 author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180415.jpg?raw=true"
