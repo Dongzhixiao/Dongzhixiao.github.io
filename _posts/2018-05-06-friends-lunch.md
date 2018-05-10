@@ -17,7 +17,7 @@ tags:
 
 今天，主要研究一下层次聚类在进行数据运算的时候，对数据结果进行分析的API
 
-首先，我们使用元素数据：(注意，原始数据来源https://stackoverflow.com/questions/47021492/python-hierarchical-clustering-inconsistency-what-do-the-outputs-for-the-incons)
+首先，我们使用的原始数据如下：(注意，原始数据来源https://stackoverflow.com/questions/47021492/python-hierarchical-clustering-inconsistency-what-do-the-outputs-for-the-incons)
 
 origin data : [[2], [8], [0], [4], [1], [9], [9], [0]]
 
