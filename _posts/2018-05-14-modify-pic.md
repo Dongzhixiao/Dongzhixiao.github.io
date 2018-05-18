@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "继续工作"
-subtitle:   "2018/05/14 思考研究"
+title:      "修改图例"
+subtitle:   "2018/05/14 改图"
 date:       2018-05-14
 author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180514.jpg?raw=true"
