@@ -9,6 +9,8 @@ tags:
     - 日记
 ---
 
+>Nothing is impossible to a willing heart.
+心之所愿，无事不成。
 
 ```
     今天，我尝试了各种方法，终于决定使用以10为底数的log对日志类别进行计算，从而得到权重。因为这样的想法

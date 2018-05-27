@@ -7,11 +7,11 @@ author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180514.jpg?raw=true"
 tags:
     - 日记
+    - matplotlib
 ---
 
 
 ```
-    今天，仔细修改了一下图例字体的大小。过程中学习到了如果调整matplotlib的字体大小。
+    今天，仔细修改了一下图例字体的大小。过程中学习到了如果调整matplotlib的字体大小。这周要总结一下。
 ```
-
 

@@ -7,6 +7,10 @@ author:     "WangXiaoDong"
 header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180506.jpg?raw=true"
 tags:
     - 日记
+    - 聚类
+    - 数据挖掘
+    - 机器学习
+    - python
 ---
 
 
@@ -15,9 +19,12 @@ tags:
 中午回来后，和杭杰一起吃了顿午饭，下午就睡了一大觉。
 ```
 
-今天，主要研究一下层次聚类在进行数据运算的时候，对数据结果进行分析的API
+今天，主要研究一下层次聚类在进行数据运算的时候，对数据结果进行自然簇分离而需要分析的API————inconsistent()
+该函数是计算层次聚类不一致系数的，不一致系数越大，表明使用该阈值进行聚类的偏差越大。这样按照该不一致系数下的阈值进行聚类即相对于其他
+情况下的阈值更不适合，因此可以进行自然簇的分离，即取阈值为该不一致系数下小一点即可。解释在<a target="_blank" href="https://ww2.mathworks.cn/help/stats/hierarchical-clustering.html#bq_679x-14">这里</a>
 
-首先，我们使用的原始数据如下：(注意，原始数据来源https://stackoverflow.com/questions/47021492/python-hierarchical-clustering-inconsistency-what-do-the-outputs-for-the-incons)
+下面介绍API的使用方法。
+首先，我们使用的原始数据如下：(注意，原始数据来源<a target="_blank" href="https://stackoverflow.com/questions/47021492/python-hierarchical-clustering-inconsistency-what-do-the-outputs-for-the-incons">这里</a>)
 
 origin data : [[2], [8], [0], [4], [1], [9], [9], [0]]
 
