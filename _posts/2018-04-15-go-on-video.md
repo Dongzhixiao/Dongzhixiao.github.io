@@ -36,7 +36,10 @@ tags:
 #### python打包
 
 使用`pyinstaller`可以打包程序，直接在python里面，找打`main`函数的`.py`文件，输入命令
-`pyinstaller test.py  #打包成文件夹`
-`pyinstaller -F test.py  #打包成单个文件`   
-`pyinstaller -F -w test.py  #打包成窗口文件`
-`pyinstaller -F -w -i 图标路径 test.py  #打包成窗口文件并制定图标` 
+
+```
+pyinstaller test.py  #打包成文件夹
+pyinstaller -F test.py  #打包成单个文件 
+pyinstaller -F -w test.py  #打包成窗口文件
+pyinstaller -F -w -i 图标路径 test.py  #打包成窗口文件并制定图标
+```
