@@ -25,6 +25,9 @@ tags:
 
 ### 使用subprocess直接调用即可
 
+首先确定你的电脑中有`java`命令。然后从SPMF官网下载相关`jar包`。
+然后使用编程语言对应的相关子程序调用的库即可，比如`python`语言就可以使用`subprocess`包进行调用使用
+
 ```
 import subprocess
 ##使用命令行进行操作
