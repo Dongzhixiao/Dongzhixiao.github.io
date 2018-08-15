@@ -8,6 +8,7 @@ header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20
 tags:
     - 日记
     - 论文阅读
+    - XGBoost
 ---
 
 
@@ -26,10 +27,46 @@ gain-based evauation of IR techniques》里面的DCG方法。
 ```
 
 今天在阅读论文的时候用到了机器学习中的GBDT方法，这里简单介绍一下：
-GBDT属于机器学习中的集成学习：
 
+## GBDT所属
 
+GBDT属于机器学习中的集成学习。
 
+## GBDT简介
 
+gbdt全称梯度下降树，在传统机器学习算法里面是对真实分布拟合的最好的几种算法之一，
+在前几年深度学习还没有大行其道之前，gbdt在各种竞赛是大放异彩。原因大概有几个，
+一是效果确实挺不错。
+二是即可以用于分类也可以用于回归。
+三是可以筛选特征。
+这三点实在是太吸引人了！
 
+## GBDT使用
+
+现在最常用的GBDT库是<a target="_blank" href="http://xgboost.readthedocs.io/en/latest/">xgboost</a>
+直接看python的使用方法，发现一个最简单的例子：
+
+```
+import xgboost as xgb
+# read in data
+dtrain = xgb.DMatrix('demo/data/agaricus.txt.train')
+dtest = xgb.DMatrix('demo/data/agaricus.txt.test')
+# specify parameters via map
+param = {'max_depth':2, 'eta':1, 'silent':1, 'objective':'binary:logistic' }
+num_round = 2
+bst = xgb.train(param, dtrain, num_round)
+# make prediction
+preds = bst.predict(dtest)
+```
+
+这个例子显示其使用方法非常简单，这个库所包含的所有方法在<a target="_blank" href="http://xgboost.readthedocs.io/en/latest/parameter.html">参数页面</a>
+查看，这里我们可以看到General Parameters里面的第一个参数的解释：
+
+```
+booster [default= gbtree ]
+Which booster to use. Can be gbtree, gblinear or dart; 
+gbtree and dart use tree based models while gblinear uses linear functions.
+```
+
+可以看出默认使用的就是gbtree方法，即GBDT方法进行计算。
 
