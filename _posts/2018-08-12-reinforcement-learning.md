@@ -85,7 +85,7 @@ $$Q(s ，a)$$的值是“在$$s$$状态执行了$$a$$行为后的期望奖励数
 
 $$Q(s,a)\longleftarrow(1-\alpha)Q(s,a)+\alpha[R+\gamma max_a Q(s',a)]$$
 
-$$Q(state, action)$$表示在状态state下执行action后期望得到的
+$$Q(state, action)$$表示在状态state下执行action后**期望**得到的
 奖励。实际上，执行action 后状态自state变成了new_state，并且得到了奖
 励reward。Q_learning算法用$$reward+\gamma*Q[new\_state, : ].max()$$来近
 似期望得到的奖励。其中，reward 为执行action 后本来可以得到的奖励，而
