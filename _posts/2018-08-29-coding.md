@@ -1,0 +1,16 @@
+---
+layout:     post
+title:      "继续研究之前的错误"
+subtitle:   "2018/08/28 研究"
+date:       2018-08-28
+author:     "WangXiaoDong"
+header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20180827.jpg?raw=true"
+tags:
+    - 日记
+---
+
+
+```
+    今天周二，算了什么都不想了，还是赶紧科研吧，其他都不知道该干啥！结果看了一天attention机制，还是
+没有搞懂，我无语了！
+```
