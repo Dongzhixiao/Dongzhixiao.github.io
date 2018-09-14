@@ -15,19 +15,19 @@ tags:
 #####   Email: 347916416@qq.com
 ----------
 
-#一、HTMLDOM
+# 一、HTMLDOM
 
-##1.什么是HTMLDOM?
+## 1.什么是HTMLDOM?
 
 HTMLDOM提供处理HTML文档的API。
 
-##2.W3CDOM与HTMLDOM的区别
+## 2.W3CDOM与HTMLDOM的区别
 
 W3CDOM可以处理HTML/XML文档;
 
 HTMLDOM仅能处理HTML文档。
 
-##3.获取对象
+## 3.获取对象
 
 A.document.getElementById(string id)
 
@@ -43,7 +43,7 @@ C.document.getElementsByName
  (主要用于复选框)
 
 
-##4.访问HTML对象的属性
+## 4.访问HTML对象的属性
 
 object.属性名称 = 值
 
@@ -59,7 +59,7 @@ C.HTML标记的class属性,在HTMLDOM中应使用className取代。(因为class�
 D.HTML标记的style属性,在HTMLDOM中将返回
 CSSStyleDecleration(或CSS2Properties)对象。
 
-##5.CSSStyleDecleration对象
+## 5.CSSStyleDecleration对象
 
 访问CSS样式
 
@@ -74,7 +74,7 @@ B.如果CSS样式带有短横线,则在CSSStyleDeclaration对象中去掉短横�
 
 C.CSS样式中的float属性在CSSStyleDeclaration对象中,如果浏览器为Chrome、Firefox等，则使用cssFloat取代;如果浏览器为IE则使用styleFloat取代。
 
-##6.访问HTML对象的文本
+## 6.访问HTML对象的文本
 
 所有文本都认为纯文本(HTML不能被解析)
 object.innerText
@@ -82,20 +82,20 @@ object.innerText
 HTML可以被解析
 object.innerHTML
 
-##7.添加节点
+## 7.添加节点
 
 A.全部HTMLDOM节点的创建都可以通过W3CDOM的方法实现
 
 B.有几个特殊的HTMLDOM节点，它们拥有自己
 的创建、删除方法。
 
-###7.1 图像
+### 7.1 图像
 
 通过构造函数方式
 
 [var 变量名称 = ] new Image(width,height)
 
-###7.2 列表框
+### 7.2 列表框
 
 A.列表框
 
@@ -138,7 +138,7 @@ defaultSelected,指是否为默认选项(boolean)
 selected,指是否被选定
 (boolean)
 
-##8.单选框/复选框/列表框
+## 8.单选框/复选框/列表框
 
 说明:
 

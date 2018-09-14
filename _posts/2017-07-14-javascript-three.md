@@ -15,8 +15,8 @@ tags:
 #####   Email: 347916416@qq.com
 ----------
 
-#一、DOM编程
-##1.什么是DOM?
+# 一、DOM编程
+## 1.什么是DOM?
 
 DOM[Document Object Model],文档对象模型。
 
@@ -35,7 +35,7 @@ Node.COMMENT_NODE,8(注释类型)
 Node.DOCUMENT_NODE,9(文档类型)
 
 
-##2.document对象
+## 2.document对象
 属性
 
 方法

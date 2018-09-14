@@ -15,9 +15,9 @@ tags:
 #####   Email: 347916416@qq.com
 ----------
 
-#一、JavaScript的内置对象
+# 一、JavaScript的内置对象
 
-##1.String
+## 1.String
 
 创建String对象
 
@@ -75,7 +75,7 @@ split
 描述:将字符串拆分成数组
 语法:array object.split(string separator)
 
-##2.Math
+## 2.Math
 
 属性
 Math.PI
@@ -113,7 +113,7 @@ Math.random()
 描述:产生随机数
 语法:float Math.random()
 
-##3.Array
+## 3.Array
 
 创建数组
 
@@ -167,7 +167,7 @@ Math.random()
     描述:数组反转
     语法:array object.reverse()
 
-##4.Date
+## 4.Date
 
 创建Date对象
 
@@ -206,13 +206,13 @@ getTime()
 描述:获取毫秒
 语法:int object.getTime()
 
-#二、自定义函数
+# 二、自定义函数
 
-##1.什么是自定义函数
+## 1.什么是自定义函数
 
 完成某种功能的代码段。
 
-##2.创建自定义函数
+## 2.创建自定义函数
 
 function 函数名称([参数[,...]]){
     ...
@@ -220,36 +220,36 @@ function 函数名称([参数[,...]]){
     [return 返回值]
 }
 
-##3.调用自定义函数
+## 3.调用自定义函数
 
 [var 变量名称=] 函数名称([值[,...]])
 
-##4.变量作用域
+## 4.变量作用域
 
-###4.1 JS编译和执行过程
+### 4.1 JS编译和执行过程
 
 A.编译,只负责变量的声明和函数的定义。
    而且所有变量的初始值为undefined.
 
 B.执行,自上而下,
     
-###4.2 变量作用域
+### 4.2 变量作用域
 
 全局变量
 
 局部变量
 
-##5.arguments对象
+## 5.arguments对象
 
 arguments对象指由函数的参数所组成的对象。
 
 length属性
 
-##6.匿名函数
+## 6.匿名函数
 
 没有名称的函数称为匿名函数。
 
-##7.全局函数
+## 7.全局函数
 parseInt()
 parseFloat()
 isNaN()

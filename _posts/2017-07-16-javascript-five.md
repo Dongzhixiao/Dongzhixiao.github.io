@@ -15,7 +15,7 @@ tags:
 #####   Email: 347916416@qq.com
 ----------
 
-#一、Table对象
+# 一、Table对象
 
 rows属性
 
@@ -70,7 +70,7 @@ deleteCell()
 
 
 
-#二、window对象
+# 二、window对象
 
 setTimeout()
 描述:设置一次性定时器
@@ -118,15 +118,15 @@ close()
 关闭由window.open()方法打开的窗口。
 
 
-#三、BOM
+# 三、BOM
 
-##1.什么是BOM?
+## 1.什么是BOM?
 
 BOM[Browser Object Model],浏览器对象模型
 
 BOM提供与浏览器相关的API。
 
-##2.screen对象
+## 2.screen对象
 
 width属性
 
@@ -137,7 +137,7 @@ height属性
 描述:返回显示器分辨率的高度
 语法:screen.height
 
-##3.history
+## 3.history
 
 length属性
 描述:返回历史的长度
@@ -158,7 +158,7 @@ go()
 history.go(3),前进3步
 history.go(-2),后退两步
 
-##4.location对象
+## 4.location对象
 
 href属性
 
@@ -170,7 +170,7 @@ reload()
 描述:重新加载页面
 语法:location.reload()
 
-##5.navigator
+## 5.navigator
 
 appVersion
 描述:返回浏览器的版本号
@@ -179,20 +179,20 @@ appVersion
 BOM整体方法图像可以如下图显示：
 ![BOM](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/BOM.png?raw=true "BOM整体方法图像")
 
-#六、JS中的OOP
+# 六、JS中的OOP
 
-##1.直接量方式
+## 1.直接量方式
 
 var 变量名称 = {}
 
-##2.原型方式
+## 2.原型方式
 
 function 类名称([参数[,...]]){
    
 }
 
 
-#七、JSON
+# 七、JSON
 
 JSON是一种轻量级的数据交换格式。
 

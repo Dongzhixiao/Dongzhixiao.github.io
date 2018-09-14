@@ -16,9 +16,9 @@ tags:
 #####   Email: 347916416@qq.com
 ----------
 
-##1,网络应用程序的架构(了解)
+## 1,网络应用程序的架构(了解)
 
-###(1)主机/终端
+### (1)主机/终端
 - 特点：
 	主机负责所有的计算(处理业务),终端只负责输入输出(不做任何计算)。
 - 优点：
@@ -26,10 +26,10 @@ tags:
 - 缺点:
 	昂贵,扩展困难。
 
-###(2)client/server
+### (2)client/server
 ![client/server](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/cs.jpg?raw=true "client/server图像")
 
-###1)两层的client/server
+### 1)两层的client/server
 - 特点：
 	使用数据库来充当服务器(大量的业务处理逻辑是使用数据库特定的编程语言来写的)。客户端提供界面和少量的业务逻辑处理。
 - 缺点：
@@ -37,7 +37,7 @@ tags:
 	不适合大型应用(要求客户端与
 	数据库服务器建立一个持续连接)。
 
-###2)三层的client/server
+### 2)三层的client/server
 - 特点：
 	所有的业务处理都由应用服务器来做。
 - 优点：
@@ -48,7 +48,7 @@ tags:
 	客户端需要单独安装和维护。
 	开发复杂。
 
-###(3)browser/web server
+### (3)browser/web server
 ![browser/web server](https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/bs.jpg?raw=true "browser/web server图像")
 
 - 特点：
@@ -58,14 +58,14 @@ tags:
 	不需要自定义协议)。
 	不需要单独安装客户端了。
 
-##2,什么是servlet?
+## 2,什么是servlet?
 sun公司制订的一种用来扩展web服务器功能的组件规范。
 servlet = server(服务器) + let(小程序)
 
-###(1)扩展web服务器功能		
+### (1)扩展web服务器功能		
 web服务器收到请求之后，可以调用servlet来处理。
 
-###(2)组件规范
+### (2)组件规范
 - a,什么是组件?
 	符合规范，并且实现了部分功能的软件模块。
 	组件一般需要部署到相应的容器里面才能运行。
@@ -77,7 +77,7 @@ web服务器收到请求之后，可以调用servlet来处理。
 	组件不依赖特定的容器的，比如，
 	我们开发了一个servlet,可以部署到weblogic, jetty,was，tomcat等服务器上运行。
 
-##3,如何写一个servlet?
+## 3,如何写一个servlet?
 - step1,写一个java类，实现Servlet
 	接口或者继承HttpServlet抽象类。
 - step2,编译。
@@ -96,7 +96,7 @@ web.xml(部署描述文件)
 	`	http://localhost:8080/web01/hello`
     > 如果出错，可能是端口被占用，可以修改端口：8088 8089	
     
-##4,安装tomcat
+## 4,安装tomcat
 - step1,将tomcat的安装压缩文件解压到/home/soft01下。
 	(www.apache.org下载tomcat)
 - step2,配置环境变量。
@@ -114,7 +114,7 @@ sh startup.sh(或者sh catalina.sh run)
 	打开浏览器，输入
 	`http://localhost:8080`
     >关闭tomcat：打开/tomcat/bin,使用里面的shutdown命令
-##5,使用myeclipse来开发servlet
+## 5,使用myeclipse来开发servlet
 - step1,启动myeclipse,配置tomcat。
 - step2,创建一个web工程。
     >src/main/webapp/WEB-INF/web.xml(必须结构)，否则错误，因此需要使用右键项目名，
@@ -143,7 +143,7 @@ sh startup.sh(或者sh catalina.sh run)
     - http://ip:port/项目名/网名
     - eg: http://192.168.1.102:8080/servlet1/ts
    
-##6,servlet是如何运行的?
+## 6,servlet是如何运行的?
 比如，在浏览器地址栏输入
 `http://ip:port/firstweb/hello?uname=tom`
 
