@@ -88,7 +88,22 @@ friends: [
         title: "pluskid_new",
         href: "http://pluskid.org/"
     },{
-        title: "Example Friends",
-        href: "#"
+        title: "Sebastian Ruder",
+        href: "http://ruder.io/"
+    },{
+        title: "Haifeng Jin",
+        href: "http://haifengjin.com/"
+    },{
+        title: "GitXiv",
+        href: "http://www.gitxiv.com/"
+    },{
+        title: "狂徒归来",
+        href: "https://www.cnblogs.com/crackpotisback/"
+    },{
+        title: "Ling",
+        href: "http://www.bdpt.net/cn/"
+    },{
+        title: "刘建平Pinard",
+        href: "https://www.cnblogs.com/pinard/"
     }
 ]
