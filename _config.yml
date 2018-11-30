@@ -103,7 +103,7 @@ friends: [
         title: "Ling",
         href: "http://www.bdpt.net/cn/"
     },{
-        title: "刘建平Pinard",
+        title: "刘建平Pinard(机器学习)",
         href: "https://www.cnblogs.com/pinard/"
     },{
         title: "Linghao Zhang",
@@ -111,5 +111,11 @@ friends: [
     },{
         title: "苏剑林",
         href: "https://spaces.ac.cn/me.html"
+    },{
+        title: "周老师(线性代数)",
+        href: "https://ccjou.wordpress.com/"
+    },{
+        title: "火光摇曳",
+        href: "http://www.flickering.cn/"
     }
 ]
