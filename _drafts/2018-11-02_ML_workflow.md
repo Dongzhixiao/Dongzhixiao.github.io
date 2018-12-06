@@ -1,34 +1,3 @@
----
-layout:     post
-title:      "11月的开始"
-subtitle:   "2018/11/01 又一年"
-date:       2018-11-01
-author:     "WangXiaoDong"
-header-img: "https://github.com/Dongzhixiao/PictureCache/blob/master/diaryPic/20181101.jpg?raw=true"
-tags:
-    - 日记
-    - 机器学习总体分析(以鸢尾花数据集为例)
----
-
-
-```
-    最近一段时间，做的有趣的事情是如下：
-```
-
-- 1.汇报了一个关于机器学习的PPT，自己也在整理相关资源的时候对python进行机器学习分析的整体学习了一遍。
-
-- 2.参加运动会，购买了一件衣服。
-
-- 3.生日，涨了一岁，收到腾飞、小崔的礼物，当天杭杰还请我吃了顿饭。
-
-- 4.完成日志实时监测程序。
-- 5.发现vscode，超级好用的文本编辑工具，集成的插件可以满足各种编程语言的调试！
-
-
->最近，在kaggle上找到一位大牛写的机器学习算法总结，感觉流程清晰，内容详实，因此翻译并分享下，由于作者不明原因将原文删除了，所以没法放上原文地址，文中主要以代码实践的方式展开各种算法，原理方面参考文中的地址连接（这是自己加上的），以便随时查阅~
-
-下面主要总结一下11月2号进行的机器学习汇报的内容，带运行结果的完整版请访问[这里](/2018/11/02/ML-workflow/)
-----------------------------------
 
 # 目录
 
@@ -172,8 +141,7 @@ tags:
 
 ![](https://github.com/Dongzhixiao/PictureCache/blob/master/machineLearning/20181102_3.png?raw=true)
 
-```
-#python {cmd="G:\\Anaconda3\\python.exe" output='html'}
+```python {cmd="G:\\Anaconda3\\python.exe" output='html'}
 # packages to load 
 # Check the versions of libraries
 # Python version
@@ -232,8 +200,7 @@ from sklearn.metrics import classification_report
 
 - 读取数据、查看数据类型、数据形状以及基本信息
 
-```
-#python {cmd="G:\\Anaconda3\\python.exe" output='html'}
+```python {cmd="G:\\Anaconda3\\python.exe" output='html'}
 # import Dataset to play with it
 import pandas as pd
 dataset = pd.read_csv('../data/Iris.csv')
@@ -244,27 +211,35 @@ print(dataset.info())
 ```
 
 - 数据内容
-```
-dataset['Species'].unique()
-dataset["Species"].value_counts()
+```python {cmd="G:\\Anaconda3\\python.exe" output='html'}
+import pandas as pd
+dataset = pd.read_csv('../data/Iris.csv')
+print(dataset['Species'].unique())
+print(dataset["Species"].value_counts())
 ```
 
 - 数据样例
-```
-dataset.head(5)   #开头
-dataset.tail()    #结尾
-dataset.sample(5) #随机
+```python {cmd="G:\\Anaconda3\\python.exe" output='html'}
+import pandas as pd
+dataset = pd.read_csv('../data/Iris.csv')
+print(dataset.head(5))   #开头
+print(dataset.tail())    #结尾
+print(dataset.sample(5)) #随机
 ```
 
 - 数据描述
-```
-dataset.describe() 
+```python {cmd="G:\\Anaconda3\\python.exe" output='html'}
+import pandas as pd
+dataset = pd.read_csv('../data/Iris.csv')
+print(dataset.describe()) 
 ```
 
 - 数据操作
-```
-dataset.where(dataset ['Species']=='Iris-setosa')
-dataset[dataset['SepalLengthCm']>7.2]
+```python {cmd="G:\\Anaconda3\\python.exe" output='html'}
+import pandas as pd
+dataset = pd.read_csv('../data/Iris.csv')
+print(dataset.where(dataset ['Species']=='Iris-setosa'))
+print(dataset[dataset['SepalLengthCm']>7.2])
 ```
 
 ### 6.2 可视化
@@ -272,8 +247,7 @@ dataset[dataset['SepalLengthCm']>7.2]
     - 数据可视化是用图形或图形格式表示数据。它使决策者能够直观地看到分析，这样他们就能掌握困难的概念或识别新的模式。通过交互式可视化，可以更进一步地使用技术，深入到图表和图表中，以获得更详细的信息，在这一节中将展示了多个使用matplotlib包绘制的图
 
 #### 6.2.1 散点图
-```
-#python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
 import pandas as pd
 dataset = pd.read_csv('../data/Iris.csv')
 import seaborn as sns
@@ -291,8 +265,7 @@ plt.show()
 - 在描述性统计中，一个箱形图或箱线图是一种通过它们的四分位图来图形化地描述数字数据组的方法。
 - 箱形图也可能有从盒子（胡须）垂直延伸的线，表示在上和下四分位之外的变化，因此术语盒须图和盒须图。
 
-```
-#python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
 import pandas as pd
 import matplotlib.pyplot as plt
 dataset = pd.read_csv('../data/Iris.csv')
@@ -304,8 +277,7 @@ plt.show()
 
 #### 6.2.2 盒图(附)
 
-```
-#python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -313,8 +285,7 @@ dataset = pd.read_csv('../data/Iris.csv')
 sns.boxplot(x="Species", y="PetalLengthCm", data=dataset )
 plt.show()
 ```
-```
-#python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -323,8 +294,7 @@ ax= sns.boxplot(x="Species", y="PetalLengthCm", data=dataset)
 ax= sns.stripplot(x="Species", y="PetalLengthCm", data=dataset, jitter=True, edgecolor="gray")
 plt.show()
 ```
-```
-#python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -349,8 +319,7 @@ plt.show()
 
 我们也可以创建每个输入变量的直方图来获得分布的概念
 
-```
-#python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
 import pandas as pd
 import matplotlib.pyplot as plt
 dataset = pd.read_csv('../data/Iris.csv')
@@ -367,8 +336,7 @@ plt.show()
 
 对角线是直方图，其它的部分是两个变量之间的散点图
 
-```
-#python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
 import pandas as pd
 import matplotlib.pyplot as plt
 dataset = pd.read_csv('../data/Iris.csv')
@@ -386,8 +354,7 @@ plt.show()
 
 小提琴图又称核密度图，它是结合了箱形图和核密度图的图，将箱形图和密度图用一个图来显示，因为形状很像小提琴，所以被称作小提琴图。
 
-```
-#python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -402,8 +369,7 @@ plt.show()
 #### 6.2.6 成对图
 - 可以绘制成对图
 
-```
-#python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -419,8 +385,7 @@ plt.show()
 - 核密度估计(kernel density estimation)是在概率论中用来估计未知的密度函数，属于非参数检验方法之一，用于研究单变量关系
 
 
-```
-#python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -436,8 +401,7 @@ plt.show()
 - 拟合并绘制一个六边箱图
     - 六边箱图又名高密度散点图，如果数据点太密集，绘制散点图太过密集，六边箱图是更好的选择。
 
-```
-#python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -459,8 +423,7 @@ plt.show()
 每个点 $x={x_1,x_2,…,x_d }$定义一个有限傅里叶序列:
 $f(t)=\frac {x_1}{\sqrt2}+x_2  sin⁡(t)+x_3  cos⁡(t)+x_4  sin⁡(2t)+ x_5  cos⁡(2t)+ …$
 
-```
-#python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -476,8 +439,7 @@ plt.show()
 
 #### 6.2.10 热图
 
-```
-#python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -494,8 +456,7 @@ plt.show()
 - radviz图也是一种多维的可视化图。它是基于基本的弹簧压力最小化算法，它将数据集的特征映射到二维目标空间单位圆中的一个点，点的位置由系在点上的特征决定。将实例投入到圆的中心，特征会朝园中此实例的位置（实例对应的归一化数值）“拉”实例
 
 
-```
-#python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -563,7 +524,18 @@ plt.show()
 - k-近邻算法(k-NN)是一种用于分类和回归的机器学习方法
 - k-近邻算法代码实验如下
 
-```python
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 # K-Nearest Neighbours
 from sklearn.neighbors import KNeighborsClassifier
 
@@ -588,7 +560,18 @@ K近邻法算法原理参考：https://www.cnblogs.com/pinard/p/6061661.html
 - 在给定半径内实现邻居投票的分类器
 - 有时候我们会遇到这样的问题，即样本中某系类别的样本非常的少，甚至少于K，这导致稀有类别样本在找K个最近邻的时候，会把距离其实较远的其他样本考虑进来，而导致预测不准确。为了解决这个问题，我们限定最近邻的一个最大距离，也就是说，我们只在一个距离范围内搜索所有的最近邻，这避免了上述问题。这个距离我们一般称为限定半径。
 
-```py
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 from sklearn.neighbors import  RadiusNeighborsClassifier
 Model=RadiusNeighborsClassifier(radius=8.0)
 Model.fit(X_train,y_train)
@@ -605,7 +588,18 @@ K近邻法和限定半径最近邻法类库参数 https://www.cnblogs.com/pinard
 ### 7.3 逻辑回归(线性模型)
 - 逻辑回归是在因变量为二分类(二元)时进行的合适的回归分析。像所有的回归分析一样，逻辑回归是预测分析
 
-```py
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 # LogisticRegression
 from sklearn.linear_model import LogisticRegression
 Model = LogisticRegression()
@@ -625,7 +619,18 @@ print('accuracy is',accuracy_score(y_pred,y_test))
 ### 7.4 被动攻击分类 (线性模型)
 - Passive Aggressive Classifier实验
 
-```python
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 from sklearn.linear_model import PassiveAggressiveClassifier
 Model = PassiveAggressiveClassifier()
 Model.fit(X_train, y_train)
@@ -650,7 +655,18 @@ $$
 P(x_i \mid y) = \frac{1}{\sqrt{2\pi\sigma^2_y}} \exp\left(-\frac{(x_i - \mu_y)^2}{2\sigma^2_y}\right)
 $$
 
-```python
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 # Naive Bayes
 from sklearn.naive_bayes import GaussianNB
 Model = GaussianNB()
@@ -675,7 +691,18 @@ $$
 \hat{\theta}_{yi} = \frac{ N_{yi} + \alpha}{N_y + \alpha n}
 $$
 
-```python
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 # MultinomialNB
 from sklearn.naive_bayes import MultinomialNB
 Model = MultinomialNB()
@@ -696,7 +723,18 @@ print('accuracy is',accuracy_score(y_pred,y_test))
 
 $P(x_i \mid y) = P(i \mid y) x_i + (1 - P(i \mid y)) (1 - x_i)$
 
-```python
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 # BernoulliNB
 from sklearn.naive_bayes import BernoulliNB
 Model = BernoulliNB()
@@ -719,7 +757,18 @@ print('accuracy is',accuracy_score(y_pred,y_test))
 
 ### 7.8 支持向量机 
 - 基本支持向量机实验
-```python
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 # Support Vector Machine
 from sklearn.svm import SVC
 
@@ -741,7 +790,18 @@ print('accuracy is',accuracy_score(y_pred,y_test))
 ### 7.9 Nu-Support Vector Classification
 - Nu支持向量机实验
 
-```python
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 # Support Vector Machine's 
 from sklearn.svm import NuSVC
 
@@ -762,7 +822,18 @@ print('accuracy is',accuracy_score(y_pred,y_test))
 
 - 线性支持向量机实验
 
-```python
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 # Linear Support Vector Classification
 from sklearn.svm import LinearSVC
 
@@ -791,7 +862,18 @@ print('accuracy is',accuracy_score(y_pred,y_test))
 - 决策树算法在机器学习中算是很经典的一个算法系列了。它既可以作为分类算法，也可以作为回归算法，同时也特别适合集成学习比如随机森林。
 - 决策树是一种用于分类和回归的非参数监督学习方法。目标是创建一个模型，通过学习从数据特性推断出的简单决策规则来预测目标变量的值
 
-```python
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 # Decision Tree's
 from sklearn.tree import DecisionTreeClassifier
 
@@ -815,7 +897,18 @@ print('accuracy is',accuracy_score(y_pred,y_test))
 - 额外树与传统决策树的不同之处在于它们的构建方式。在寻找最好的分割方法将一个节点的样本分成两组时，对每个随机选择的max_features绘制随机分割，并从中选择最好的分割。当max_features设置为1时，这相当于构建了一个完全随机的决策树。
 
 
-```python
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 # ExtraTreeClassifier
 from sklearn.tree import ExtraTreeClassifier
 
@@ -854,7 +947,18 @@ print('accuracy is',accuracy_score(y_pred,y_test))
 - 模型采用随机梯度下降等方法对对数损失函数进行优化
 
 
-```python
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 from sklearn.neural_network import MLPClassifier
 Model=MLPClassifier()
 Model.fit(X_train,y_train)
@@ -882,7 +986,18 @@ print('accuracy is ',accuracy_score(y_pred,y_test))
 
 - 随机森林的实验
 
-```python
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 from sklearn.ensemble import RandomForestClassifier
 Model=RandomForestClassifier(max_depth=2)
 Model.fit(X_train,y_train)
@@ -900,7 +1015,18 @@ print('accuracy is ',accuracy_score(y_pred,y_test))
 - bagging分类器是一个集成元估计器，它在原始数据集的随机子集上适合每个基本分类器，然后汇总它们的单个预测(通过投票或平均)，形成最终的预测。这种元估计器通常可以作为一种方法来减少黑盒估计器(例如，决策树)的方差，方法是在构建过程中引入随机性，然后从中生成一个集成。这个算法包含了文献中的一些作品。当数据集的随机子集作为样本的随机子集绘制时，这种算法称为粘贴。如果样品是用替换法绘制的，那么这种方法被称为套袋法。当将数据集的随机子集绘制为特征的随机子集时，该方法称为随机子空间。最后，当基估计量是建立在样本和特征的子集上时，这种方法被称为随机斑块
 - Bagging的实验
 
-```python
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 from sklearn.ensemble import BaggingClassifier
 Model=BaggingClassifier()
 Model.fit(X_train,y_train)
@@ -919,7 +1045,18 @@ Bagging算法原理参考：https://www.cnblogs.com/pinard/p/6156009.html
 - AdaBoost分类器是一个元估计器，它首先在原始数据集上拟合一个分类器，然后在相同的数据集上拟合分类器的其他副本，但是不正确分类实例的权重会被调整，以便后续分类器更关注困难的情况。
 - 自适应提示分类器实验
 
-```python
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 from sklearn.ensemble import AdaBoostClassifier
 Model=AdaBoostClassifier()
 Model.fit(X_train,y_train)
@@ -937,7 +1074,18 @@ Adaboost算法原理参考：https://www.cnblogs.com/pinard/p/6133937.html
 
 - 梯度提升分类器（GBDT）实验
 
-```python
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 from sklearn.ensemble import GradientBoostingClassifier
 Model=GradientBoostingClassifier()
 Model.fit(X_train,y_train)
@@ -956,7 +1104,18 @@ print('accuracy is ',accuracy_score(y_pred,y_test))
 - 一线性判别分析(discriminant_analysis.LinearDiscriminantAnalysis)和二次判别分析(discriminant_analysisquadraticdiscriminantanalysis)是两种经典的分类方法，顾名思义，它们分别是一个线性和一个二次决策曲面。这些分类器很有吸引力，因为它们有可以容易计算的封闭形式的解决方案，本质上是多类的，已经被证明在实践中工作得很好，并且没有超参数可调
 - LDA实验
 
-```python
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 Model=LinearDiscriminantAnalysis()
 Model.fit(X_train,y_train)
@@ -974,7 +1133,18 @@ print('accuracy is ',accuracy_score(y_pred,y_test))
 - 一种具有二次决策边界的分类器，它是利用贝叶斯规则将类条件密度拟合到数据上而产生的。该模型适用于每个类的高斯密度
 - QDA实验
 
-```python
+```python {cmd="G:\\Anaconda3\\python.exe" output='html' matplotlib=true}
+import pandas as pd
+#进行评价需要导入的包
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+dataset = pd.read_csv('../data/Iris.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
 Model=QuadraticDiscriminantAnalysis()
 Model.fit(X_train,y_train)
