@@ -543,7 +543,7 @@ information retrieval, pages 567–574, 2007.</a>
 ![常见概率分布](https://github.com/scutan90/DeepLearning-500-questions/blob/master/ch01_%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/img/ch1/prob_distribution_6.png?raw=true)
 ![常见概率分布](https://github.com/scutan90/DeepLearning-500-questions/blob/master/ch01_%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/img/ch1/prob_distribution_7.png?raw=true)
 -->
-![常见概率分布](https://dongzhixiao.github.io/data/pd/1.png) ![常见概率分布](https://dongzhixiao.github.io/data/pd/2.png) ![常见概率分布](https://dongzhixiao.github.io/data/pd/3.png)![常见概率分布](https://dongzhixiao.github.io/data/pd/4.png)![常见概率分布](https://dongzhixiao.github.io/data/pd/5.png)![常见概率分布](https://dongzhixiao.github.io/data/pd/6.png)![常见概率分布](https://dongzhixiao.github.io/data/pd/7.png)
+![常见概率分布](https://github.com/Dongzhixiao/FileBackup/blob/master/pic_article/B-2010-WSDM-Beyond%20DCG%20User%20Behavior%20as%20a%20Predictor%20of%20a%20Successful%20Search/pd/1.png?raw=true) ![常见概率分布](https://github.com/Dongzhixiao/FileBackup/blob/master/pic_article/B-2010-WSDM-Beyond%20DCG%20User%20Behavior%20as%20a%20Predictor%20of%20a%20Successful%20Search/pd/2.png?raw=true) ![常见概率分布](https://github.com/Dongzhixiao/FileBackup/blob/master/pic_article/B-2010-WSDM-Beyond%20DCG%20User%20Behavior%20as%20a%20Predictor%20of%20a%20Successful%20Search/pd/3.png?raw=true)![常见概率分布](https://github.com/Dongzhixiao/FileBackup/blob/master/pic_article/B-2010-WSDM-Beyond%20DCG%20User%20Behavior%20as%20a%20Predictor%20of%20a%20Successful%20Search/pd/4.png?raw=true)![常见概率分布](https://github.com/Dongzhixiao/FileBackup/blob/master/pic_article/B-2010-WSDM-Beyond%20DCG%20User%20Behavior%20as%20a%20Predictor%20of%20a%20Successful%20Search/pd/5.png?raw=true)![常见概率分布](https://github.com/Dongzhixiao/FileBackup/blob/master/pic_article/B-2010-WSDM-Beyond%20DCG%20User%20Behavior%20as%20a%20Predictor%20of%20a%20Successful%20Search/pd/6.png?raw=true)![常见概率分布](https://github.com/Dongzhixiao/FileBackup/blob/master/pic_article/B-2010-WSDM-Beyond%20DCG%20User%20Behavior%20as%20a%20Predictor%20of%20a%20Successful%20Search/pd/7.png?raw=true)
 
 
 #### 10.4 [k折交叉验证](#目录)
@@ -564,7 +564,7 @@ information retrieval, pages 567–574, 2007.</a>
  3) False negatives(FN):被错误地划分为负例的个数，即实际为正例但被分类器划分为负例的实例数；
  4) True negatives(TN): 被正确地划分为负例的个数，即实际为负例且被分类器划分为负例的实例数。　
 
-![评价指标图](https://dongzhixiao.github.io/data/pd/8.png)
+![评价指标图](https://github.com/Dongzhixiao/FileBackup/blob/master/pic_article/B-2010-WSDM-Beyond%20DCG%20User%20Behavior%20as%20a%20Predictor%20of%20a%20Successful%20Search/pd/8.png?raw=true)
 
 上图是这四个术语的混淆矩阵。
 1）P=TP+FN表示实际为正例的样本个数。
