@@ -193,6 +193,15 @@ listToAnalysis = []
 >注意：该函数返回的列表生成器只能使用一次，我在这里调试时出了好多次错误，每次用完后我调用这个生成器，
 然后总是得到空集，所以干脆直接返回值包上字典函数`dict`并返回给变量`itemsets`，这样可以多次使用
 
+由于输入必须是整数，因此这里需要把所有字符串进行编码：
+```
+#进行编码，将listToAnalysis里面的字符串转换成整数
+strSet = set(functools.reduce(lambda a,b:a+b, listToAnalysis))
+strEncode = dict(zip(strSet,range(len(strSet)))) #编码字典，即:{'ArticleTag_BS': 6,'Country_Argentina': 53,etc...}
+strDecode = dict(zip(strEncode.values(), strEncode.keys()))  #解码字典，即:{6:'ArticleTag_BS',53:'Country_Argentina',etc...}
+listToAnalysis_int = [list(map(lambda item:strEncode[item],row)) for row in listToAnalysis]   #编码后的输入数据
+```
+
 预处理做好了，这里分析仅仅一行代码即可：
 
 ```
@@ -217,27 +226,27 @@ rules = list(rules)
 ```
 
 `rules`的结果是元祖，每一个值都是`frozenset,frozenset,suport,confidence`形式，例如：
-`(frozenset({'AT_地球科学', 'C_IGSNRR,CAS', 'TI_100_200'}), frozenset({'RN_0_20'}), 7, 1.0)`
+`(frozenset({1, 24, 41}), frozenset({8}), 13, 0.7222222222222222)`
 我为了使结果更有利于观察，自己加了个函数得到可打印的便于观察的规则，代码如下：
 
 ```
-def dealResult(rules):
+def dealResult(rules,strDecode):
     returnRules = []
     for i in rules:
         temStr = '';
         for j in i[0]:   #处理第一个frozenset
-            temStr = temStr+j+'&'
+            temStr = temStr+strDecode[j]+'&'
         temStr = temStr[:-1]
         temStr = temStr + ' ==> '
         for j in i[1]:
-            temStr = temStr+j+'&'
+            temStr = temStr+strDecode[j]+'&'
         temStr = temStr[:-1]
         temStr = temStr + ';' +'\t'+str(i[2])+ ';' +'\t'+str(i[3])+ ';' +'\t'+str(i[4])+ ';' +'\t'+str(i[5])+ ';' +'\t'+str(i[6])+ ';' +'\t'+str(i[7])
 #        print(temStr)
         returnRules.append(temStr)
     return returnRules
-
-printRules = dealRules(rules)
+    
+printRules = dealRules(rules,strDecode)
 ```
 
 这里可以打印`printRules`观察结果
